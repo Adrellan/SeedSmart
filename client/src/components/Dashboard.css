@@ -1,4 +1,4 @@
-.dashboard-container {
+﻿.dashboard-container {
   width: 20vw;
   height: 100vh;
   display: flex;
@@ -126,6 +126,44 @@
   background: #94a3b8;
 }
 
-.dashboard-button.p-button .p-button-icon-left {
-  margin-right: 4px !important;
+.topics-list {
+  margin-top: 1rem;
+  padding-left: 0;
+  list-style: none;
 }
+
+.topics-list li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 0.75rem;
+  line-height: 1.5;
+}
+
+.topics-list li::before {
+  content: '\\1F525';
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+
+.topics-list {
+  margin-top: 1rem;
+  padding-left: 0;
+  list-style: none;
+}
+
+.topics-list li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 0.75rem;
+  line-height: 1.5;
+}
+
+.topics-list li::before {
+  content: '🔥';
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+

@@ -1,17 +1,13 @@
 ﻿import { useEffect, useMemo, useState } from 'react';
-import { fetchCountries, fetchRegions } from '../services/DashboardService';
+import { fetchCountries, fetchRegions, fetchTopics } from '../services/DashboardService';
 import type { Country } from '../types/Country';
-import type { RegionGeometry, RegionShape } from '../types/Region';
-import { TARGET_ZOOM } from '../config/globals';
+import type { RegionShape, RegionGeometry } from '../types/Region';
+import { TARGET_ZOOM, type CategoryKey } from '../config/globals';
+import type { FetchTopicsResponse } from '../types/Topic';
 
 interface Year {
   label: string;
   value: number;
-}
-
-interface RegionOption {
-  label: string;
-  value: string;
 }
 
 interface MapViewState {
@@ -19,19 +15,19 @@ interface MapViewState {
   zoom: number;
 }
 
-const extractCenterFromGeometry = (geometry: RegionGeometry | null): [number, number] | null => {
+const computeCenter = (geometry: RegionGeometry | null): [number, number] | null => {
   if (!geometry) {
     return null;
   }
 
-  let minLat = Number.POSITIVE_INFINITY;
-  let minLng = Number.POSITIVE_INFINITY;
-  let maxLat = Number.NEGATIVE_INFINITY;
-  let maxLng = Number.NEGATIVE_INFINITY;
   let hasPoint = false;
+  let minLat = Infinity;
+  let maxLat = -Infinity;
+  let minLng = Infinity;
+  let maxLng = -Infinity;
 
-  const trackPoint = (lng: number, lat: number) => {
-    if (Number.isNaN(lat) || Number.isNaN(lng)) {
+  const track = (lng: number, lat: number) => {
+    if (!Number.isFinite(lat) || !Number.isFinite(lng)) {
       return;
     }
     hasPoint = true;
@@ -43,12 +39,12 @@ const extractCenterFromGeometry = (geometry: RegionGeometry | null): [number, nu
 
   if (geometry.type === 'Polygon') {
     geometry.coordinates.forEach((ring) => {
-      ring.forEach(([lng, lat]) => trackPoint(lng, lat));
+      ring.forEach(([lng, lat]) => track(lng, lat));
     });
-  } else if (geometry.type === 'MultiPolygon') {
+  } else {
     geometry.coordinates.forEach((polygon) => {
       polygon.forEach((ring) => {
-        ring.forEach(([lng, lat]) => trackPoint(lng, lat));
+        ring.forEach(([lng, lat]) => track(lng, lat));
       });
     });
   }
@@ -63,8 +59,8 @@ const extractCenterFromGeometry = (geometry: RegionGeometry | null): [number, nu
 };
 
 export const useDashboard = () => {
-  const currentYear = new Date().getFullYear();
-  const years: Year[] = Array.from({ length: 11 }, (_, i) => ({
+  const currentYear = new Date().getFullYear() - 1;
+  const years: Year[] = Array.from({ length: 26 }, (_, i) => ({
     label: (currentYear + 1 - i).toString(),
     value: currentYear + 1 - i,
   }));
@@ -76,9 +72,17 @@ export const useDashboard = () => {
   const [filteredCountries, setFilteredCountries] = useState<string[]>([]);
   const [selectedRegion, setSelectedRegion] = useState<string | null>(null);
   const [selectedYear, setSelectedYear] = useState<number>(currentYear);
+  const [notes, setNotes] = useState<string>('');
   const [mapView, setMapView] = useState<MapViewState | null>(null);
+  const [selectedCategories, setSelectedCategories] = useState<CategoryKey[]>([]);
+  const [topics, setTopics] = useState<FetchTopicsResponse | null>(null);
 
-  const regions: RegionOption[] = useMemo(
+  const toggleCategory = (key: CategoryKey) =>
+    setSelectedCategories((prev) =>
+      prev.includes(key) ? prev.filter((k) => k !== key) : [...prev, key],
+    );
+
+  const regions = useMemo(
     () => regionsData.map((region) => ({ label: region.name_latn, value: region.name_latn })),
     [regionsData]
   );
@@ -136,7 +140,15 @@ export const useDashboard = () => {
       try {
         const fetchedRegions = await fetchRegions(matchedCountry.cntr_code);
         if (isMounted) {
-          setRegionsData(fetchedRegions);
+          const uniqueRegions = fetchedRegions.reduce((acc: RegionShape[], current) => {
+            const isDuplicate = acc.some(region => region.name_latn === current.name_latn);
+            if (!isDuplicate) {
+              acc.push(current);
+            }
+            return acc;
+          }, []);
+
+          setRegionsData(uniqueRegions);
         }
       } catch (error) {
         console.error('Failed to load regions', error);
@@ -160,23 +172,55 @@ export const useDashboard = () => {
     }
 
     const region = regionsData.find((item) => item.name_latn === selectedRegion);
-    if (!region) {
+    const center = computeCenter(region?.geom ?? null);
+
+    if (!center) {
       setMapView(null);
       return;
     }
 
-    const center = extractCenterFromGeometry(region.geom);
-    if (center) {
-      setMapView({ center, zoom: TARGET_ZOOM });
-    } else {
-      setMapView(null);
-    }
+    setMapView({ center, zoom: TARGET_ZOOM });
   }, [selectedRegion, regionsData]);
+
+  useEffect(() => {
+    let isMounted = true;
+
+    const loadTopics = async () => {
+      if (!selectedCountry || !selectedYear) {
+        if (isMounted) {
+          setTopics(null);
+        }
+        return;
+      }
+
+      try {
+        const response = await fetchTopics({
+          country: selectedCountry,
+          year: selectedYear,
+          categories: selectedCategories,
+        });
+        if (isMounted) {
+          setTopics(response);
+        }
+      } catch (error) {
+        console.error('Failed to load topics', error);
+        if (isMounted) {
+          setTopics(null);
+        }
+      }
+    };
+
+    loadTopics();
+
+    return () => {
+      isMounted = false;
+    };
+  }, [selectedCountry, selectedYear, selectedCategories]);
 
   const searchCountries = (event: { query: string }) => {
     const query = event.query.toLowerCase();
     setFilteredCountries(
-      countryNames.filter((country) => country.toLowerCase().includes(query)),
+      countryNames.filter((country) => country.toLowerCase().includes(query))
     );
   };
 
@@ -185,28 +229,36 @@ export const useDashboard = () => {
       country: selectedCountry,
       region: selectedRegion,
       year: selectedYear,
+      categories: selectedCategories,
+      notes,
       regionsData,
       mapView,
+      topics,
     });
   };
 
   return {
     countries,
     regionsData,
-    regions,
     mapView,
+    topics,
     selectedCountry,
     setSelectedCountry,
     filteredCountries,
     searchCountries,
     selectedRegion,
     setSelectedRegion,
+    regions,
     selectedYear,
     setSelectedYear,
     years,
+    notes,
+    setNotes,
+    selectedCategories,
+    toggleCategory,
     handleSuggest,
   };
 };
 
 export type UseDashboardReturn = ReturnType<typeof useDashboard>;
-export type { RegionOption, MapViewState };
+export type { MapViewState };

@@ -1,17 +1,17 @@
-﻿import React from 'react';
-import { AutoComplete } from 'primereact/autocomplete';
-import { Dropdown } from 'primereact/dropdown';
-import { Button } from 'primereact/button';
-import { Checkbox } from 'primereact/checkbox';
-import { CATEGORY_OPTIONS } from '../config/globals';
-import type { UseDashboardReturn } from '../hooks/useDashboard';
-import './Dashboard.css';
-import type { TopicResult } from '../types/Topic';
+import React from "react";
+import { AutoComplete } from "primereact/autocomplete";
+import { Dropdown } from "primereact/dropdown";
+import { Button } from "primereact/button";
+import { Checkbox } from "primereact/checkbox";
+import { CATEGORY_OPTIONS } from "../config/globals";
+import type { UseDashboardReturn } from "../hooks/useDashboard";
+import type { TopicResult } from "../types/Topic";
+import "./Dashboard.css";
 
-const formatTopicEntry = (entry: TopicResult): React.ReactNode => {
+const formatTopicEntry = (entry: TopicResult): string => {
   const category = entry.requested_category ?? "All categories";
   if (!entry.found || !entry.record) {
-    return <><strong>{category}</strong>: No data</>;
+    return `${category}: No data`;
   }
 
   const { product, category_label, price_eur_tonne } = entry.record;
@@ -29,7 +29,7 @@ const formatTopicEntry = (entry: TopicResult): React.ReactNode => {
     parts.push(`- EUR ${price_eur_tonne.toFixed(2)}/t`);
   }
 
-  return <><strong>{category}</strong>: {parts.join(" ")}</>;
+  return `${category}: ${parts.join(" ")}`.trim();
 };
 
 interface DashboardProps {
@@ -54,13 +54,32 @@ const Dashboard: React.FC<DashboardProps> = ({ state }) => {
     handleSuggest,
   } = state;
 
-  const onSuggest = () => {
-    handleSuggest();
+  const renderTopics = () => {
+    if (!topics) {
+      return null;
+    }
+
+    const entries: TopicResult[] = topics.results && topics.results.length > 0
+      ? topics.results
+      : [{
+          requested_category: null,
+          found: Boolean(topics.record),
+          record: topics.record ?? null,
+        }];
+
+    return (
+      <ul className="topics-list">
+        {entries.map((entry, index) => (
+          <li key={entry.requested_category ?? `topic-${index}`}>
+            {formatTopicEntry(entry)}
+          </li>
+        ))}
+      </ul>
+    );
   };
 
   return (
     <div className="dashboard-container">
-      {/* Header */}
       <div className="dashboard-header">
         <h1 className="dashboard-title">SeedSmart</h1>
         <p className="dashboard-subtitle">Intelligent seed analyzer</p>
@@ -69,7 +88,7 @@ const Dashboard: React.FC<DashboardProps> = ({ state }) => {
       <div className="dashboard-content">
         <div className="dashboard-field">
           <label className="dashboard-label">
-            <i className="pi pi-map-marker"></i>
+            <i className="pi pi-map-marker" />
             Country
           </label>
           <AutoComplete
@@ -84,7 +103,7 @@ const Dashboard: React.FC<DashboardProps> = ({ state }) => {
 
         <div className="dashboard-field">
           <label className="dashboard-label">
-            <i className="pi pi-globe"></i>
+            <i className="pi pi-globe" />
             Region
           </label>
           <Dropdown
@@ -101,7 +120,7 @@ const Dashboard: React.FC<DashboardProps> = ({ state }) => {
 
         <div className="dashboard-field">
           <label className="dashboard-label">
-            <i className="pi pi-calendar"></i>
+            <i className="pi pi-calendar" />
             Year
           </label>
           <Dropdown
@@ -116,7 +135,7 @@ const Dashboard: React.FC<DashboardProps> = ({ state }) => {
         <div className="two-col">
           <div className="dashboard-field">
             <label className="dashboard-label">
-              <i className="pi pi-sliders-h"></i>
+              <i className="pi pi-sliders-h" />
               Technology categories
             </label>
 
@@ -129,7 +148,7 @@ const Dashboard: React.FC<DashboardProps> = ({ state }) => {
                       inputId={checkboxId}
                       onChange={() => toggleCategory(key)}
                       checked={selectedCategories.includes(key)}
-                      style={{ marginTop: '10px', marginRight: '5px' }}
+                      style={{ marginTop: "10px", marginRight: "5px" }}
                     />
                     <label htmlFor={checkboxId} className="category-label">
                       {label}
@@ -139,36 +158,16 @@ const Dashboard: React.FC<DashboardProps> = ({ state }) => {
               })}
             </div>
 
+            {renderTopics()}
           </div>
         </div>
-            {topics && (
-              <ul className="topics-list">
-                {topics.results?.length ? (
-                  topics.results.map((result) => (
-                    <li key={result.requested_category ?? 'all'}>
-                      {formatTopicEntry(result)}
-                    </li>
-                  ))
-                ) : topics.record ? (
-                  <li>
-                    {formatTopicEntry({
-                      requested_category: null,
-                      found: true,
-                      record: topics.record as unknown as TopicResult['record'],
-                    })}
-                  </li>
-                ) : (
-                  <li>No data available</li>
-                )}
-              </ul>
-            )}
       </div>
 
       <div className="dashboard-footer">
         <Button
           label="Get suggestion"
           className="w-full dashboard-button"
-          onClick={onSuggest}
+          onClick={handleSuggest}
         />
       </div>
     </div>
@@ -176,3 +175,4 @@ const Dashboard: React.FC<DashboardProps> = ({ state }) => {
 };
 
 export default Dashboard;
+

@@ -1,0 +1,541 @@
+year,country,geo,category_key,category_label,top_crop,prod_code,price_eur_t
+2020,Austria,AT,arable,Arable (cereals/oilseeds),Grapes for wine production - prices per 100 kg,06490000,408.0
+2020,Austria,AT,industrial,Specialty industrial crops,Hops: all varieties - prices per 100 kg,02920000,7980.0
+2020,Austria,AT,orchards,Orchards/Vineyards (perennial),Apricots: all varieties - prices per 100 kg,06199100,4152.6
+2020,Austria,AT,rowCrops,Row crops,Early potatoes - prices per 100 kg,05110000,203.2
+2020,Belgium,BE,arable,Arable (cereals/oilseeds),Soft wheat - prices per 100 kg,01110000,174.5
+2020,Belgium,BE,industrial,Specialty industrial crops,Hops: all varieties - prices per 100 kg,02920000,6038.3
+2020,Belgium,BE,orchards,Orchards/Vineyards (perennial),Raspberries - prices per 100 kg,06199200,9899.8
+2020,Belgium,BE,rowCrops,Row crops,Early potatoes - prices per 100 kg,05110000,277.7
+2020,Belgium,BE,vegetables,Vegetables (fresh market/transplant),Spinach - prices per 100 kg,04193000,3093.1
+2020,Bulgaria,BG,arable,Arable (cereals/oilseeds),Dessert grapes: all varieties - prices per 100 kg,06410000,429.3
+2020,Bulgaria,BG,industrial,Specialty industrial crops,Hops: all varieties - prices per 100 kg,02920000,5240.8
+2020,Bulgaria,BG,orchards,Orchards/Vineyards (perennial),Raspberries - prices per 100 kg,06199200,1566.5
+2020,Bulgaria,BG,rowCrops,Row crops,Main crop potatoes - prices per 100 kg,05120000,212.2
+2020,Bulgaria,BG,vegetables,Vegetables (fresh market/transplant),Garlic - prices per 100 kg,04199906,2286.0
+2020,Cyprus,CY,arable,Arable (cereals/oilseeds),Dessert grapes: all varieties - prices per 100 kg,06410000,770.4000000000001
+2020,Cyprus,CY,orchards,Orchards/Vineyards (perennial),Strawberries: all types of production - prices per 100 kg,06193000,1903.8
+2020,Cyprus,CY,rowCrops,Row crops,Beetroot - prices per 100 kg,04199905,467.2
+2020,Cyprus,CY,vegetables,Vegetables (fresh market/transplant),Cultivated mushrooms: all qualities - prices per 100 kg,04199901,2571.6000000000004
+2020,Czechia,CZ,arable,Arable (cereals/oilseeds),Grapes for wine production - prices per 100 kg,06490000,518.6
+2020,Czechia,CZ,industrial,Specialty industrial crops,Hops: all varieties - prices per 100 kg,02920000,9092.0
+2020,Czechia,CZ,orchards,Orchards/Vineyards (perennial),Strawberries: all types of production - prices per 100 kg,06193000,3920.2
+2020,Czechia,CZ,rowCrops,Row crops,Early potatoes - prices per 100 kg,05110000,309.6
+2020,Czechia,CZ,vegetables,Vegetables (fresh market/transplant),Garlic - prices per 100 kg,04199906,3357.4
+2020,Germany,DE,arable,Arable (cereals/oilseeds),Dessert grapes: all varieties - prices per 100 kg,06410000,1800.0
+2020,Germany,DE,industrial,Specialty industrial crops,Hops: all varieties - prices per 100 kg,02920000,6002.4
+2020,Germany,DE,orchards,Orchards/Vineyards (perennial),Raspberries - prices per 100 kg,06199200,8459.7
+2020,Germany,DE,rowCrops,Row crops,Early potatoes - prices per 100 kg,05110000,431.2
+2020,Germany,DE,vegetables,Vegetables (fresh market/transplant),Asparagus: all qualities - prices per 100 kg,04199910,5275.0
+2020,Denmark,DK,arable,Arable (cereals/oilseeds),Rape - prices per 100 kg,02110000,376.5
+2020,Denmark,DK,orchards,Orchards/Vineyards (perennial),Raspberries - prices per 100 kg,06199200,10729.6
+2020,Denmark,DK,rowCrops,Row crops,Main crop potatoes - prices per 100 kg,05120000,213.4
+2020,Denmark,DK,vegetables,Vegetables (fresh market/transplant),Tomatoes under glass: all qualities - prices per 100 kg,04122000,1888.6000000000001
+2020,Estonia,EE,arable,Arable (cereals/oilseeds),Rape - prices per 100 kg,02110000,376.0
+2020,Greece,EL,arable,Arable (cereals/oilseeds),Dessert grapes: all varieties - prices per 100 kg,06410000,835.1999999999999
+2020,Greece,EL,industrial,Specialty industrial crops,Raw tobacco: all varieties - prices per 100 kg,02300000,3665.0
+2020,Greece,EL,orchards,Orchards/Vineyards (perennial),Strawberries: all types of production - prices per 100 kg,06193000,1659.9
+2020,Greece,EL,rowCrops,Row crops,Beetroot - prices per 100 kg,04199905,738.8
+2020,Greece,EL,vegetables,Vegetables (fresh market/transplant),Garlic - prices per 100 kg,04199906,3227.2000000000003
+2020,Spain,ES,arable,Arable (cereals/oilseeds),Dessert grapes: all varieties - prices per 100 kg,06410000,696.0
+2020,Spain,ES,industrial,Specialty industrial crops,Hops: all varieties - prices per 100 kg,02920000,4075.8999999999996
+2020,Spain,ES,orchards,Orchards/Vineyards (perennial),Raspberries - prices per 100 kg,06199200,7017.799999999999
+2020,Spain,ES,rowCrops,Row crops,Beetroot - prices per 100 kg,04199905,468.1
+2020,Spain,ES,vegetables,Vegetables (fresh market/transplant),Green peas: all qualities - prices per 100 kg,04199000,2361.6
+2020,Finland,FI,arable,Arable (cereals/oilseeds),Rape - prices per 100 kg,02110000,383.1
+2020,Finland,FI,orchards,Orchards/Vineyards (perennial),Strawberries in the open - prices per 100 kg,06193100,5880.700000000001
+2020,Finland,FI,rowCrops,Row crops,Early potatoes - prices per 100 kg,05110000,998.7
+2020,Finland,FI,vegetables,Vegetables (fresh market/transplant),Tomatoes under glass: all qualities - prices per 100 kg,04122000,1641.3
+2020,Croatia,HR,arable,Arable (cereals/oilseeds),Dessert grapes: all varieties - prices per 100 kg,06410000,966.3
+2020,Croatia,HR,industrial,Specialty industrial crops,Raw tobacco: all varieties - prices per 100 kg,02300000,1878.1
+2020,Croatia,HR,orchards,Orchards/Vineyards (perennial),Strawberries under glass - prices per 100 kg,06193200,3064.2000000000003
+2020,Croatia,HR,rowCrops,Row crops,Early potatoes - prices per 100 kg,05110000,367.40000000000003
+2020,Croatia,HR,vegetables,Vegetables (fresh market/transplant),Garlic - prices per 100 kg,04199906,3288.0
+2020,Hungary,HU,arable,Arable (cereals/oilseeds),Dessert grapes: all varieties - prices per 100 kg,06410000,484.3
+2020,Hungary,HU,orchards,Orchards/Vineyards (perennial),Raspberries - prices per 100 kg,06199200,6341.1
+2020,Hungary,HU,rowCrops,Row crops,Early potatoes - prices per 100 kg,05110000,431.0
+2020,Hungary,HU,vegetables,Vegetables (fresh market/transplant),Green beans - prices per 100 kg,04197000,1918.0
+2020,Ireland,IE,arable,Arable (cereals/oilseeds),Barley - prices per 100 kg,01300000,172.8
+2020,Ireland,IE,vegetables,Vegetables (fresh market/transplant),Cultivated mushrooms: all qualities - prices per 100 kg,04199901,1750.0
+2020,Italy,IT,arable,Arable (cereals/oilseeds),Durum wheat - prices per 100 kg,01120000,274.3
+2020,Italy,IT,orchards,Orchards/Vineyards (perennial),Lemons: all varieties - prices per 100 kg,06230000,875.0
+2020,Italy,IT,rowCrops,Row crops,Main crop potatoes - prices per 100 kg,05120000,456.4
+2020,Italy,IT,vegetables,Vegetables (fresh market/transplant),Tomatoes in the open: all qualities - prices per 100 kg,04121000,850.4000000000001
+2020,Lithuania,LT,arable,Arable (cereals/oilseeds),Rape - prices per 100 kg,02110000,356.5
+2020,Lithuania,LT,orchards,Orchards/Vineyards (perennial),Raspberries - prices per 100 kg,06199200,11682.1
+2020,Lithuania,LT,rowCrops,Row crops,Early potatoes - prices per 100 kg,05110000,285.0
+2020,Lithuania,LT,vegetables,Vegetables (fresh market/transplant),Spinach - prices per 100 kg,04193000,3745.0
+2020,Luxembourg,LU,arable,Arable (cereals/oilseeds),Grapes for wine production - prices per 100 kg,06490000,1229.0
+2020,Luxembourg,LU,orchards,Orchards/Vineyards (perennial),Strawberries: all types of production - prices per 100 kg,06193000,4800.0
+2020,Luxembourg,LU,rowCrops,Row crops,Main crop potatoes - prices per 100 kg,05120000,234.8
+2020,Latvia,LV,arable,Arable (cereals/oilseeds),Rape - prices per 100 kg,02110000,358.8
+2020,Latvia,LV,orchards,Orchards/Vineyards (perennial),Strawberries: all types of production - prices per 100 kg,06193000,2803.8999999999996
+2020,Latvia,LV,rowCrops,Row crops,Early potatoes - prices per 100 kg,05110000,316.5
+2020,Latvia,LV,vegetables,Vegetables (fresh market/transplant),Lettuce under glass: all qualities - prices per 100 kg,04192200,4323.2
+2020,Malta,MT,arable,Arable (cereals/oilseeds),Dessert grapes: all varieties - prices per 100 kg,06410000,1378.3000000000002
+2020,Malta,MT,orchards,Orchards/Vineyards (perennial),Plums: all varieties  - prices per 100 kg,06192000,1500.0
+2020,Malta,MT,rowCrops,Row crops,Main crop potatoes - prices per 100 kg,05120000,349.90000000000003
+2020,Malta,MT,vegetables,Vegetables (fresh market/transplant),Cultivated mushrooms: all qualities - prices per 100 kg,04199901,3367.5
+2020,Netherlands,NL,arable,Arable (cereals/oilseeds),Rape - prices per 100 kg,02110000,385.0
+2020,Netherlands,NL,orchards,Orchards/Vineyards (perennial),Strawberries: all types of production - prices per 100 kg,06193000,4411.3
+2020,Netherlands,NL,rowCrops,Row crops,Early potatoes - prices per 100 kg,05110000,345.7
+2020,Netherlands,NL,vegetables,Vegetables (fresh market/transplant),Asparagus: all qualities - prices per 100 kg,04199910,3634.9
+2020,Poland,PL,arable,Arable (cereals/oilseeds),Rape - prices per 100 kg,02110000,368.9
+2020,Poland,PL,industrial,Specialty industrial crops,Hops: all varieties - prices per 100 kg,02920000,3744.9
+2020,Poland,PL,orchards,Orchards/Vineyards (perennial),Raspberries - prices per 100 kg,06199200,1348.6000000000001
+2020,Poland,PL,rowCrops,Row crops,Main crop potatoes - prices per 100 kg,05120000,145.39999999999998
+2020,Poland,PL,vegetables,Vegetables (fresh market/transplant),Cultivated mushrooms: all qualities - prices per 100 kg,04199901,1099.1
+2020,Portugal,PT,arable,Arable (cereals/oilseeds),Dessert grapes: all varieties - prices per 100 kg,06410000,2409.1
+2020,Portugal,PT,industrial,Specialty industrial crops,Hops: all varieties - prices per 100 kg,02920000,4200.0
+2020,Portugal,PT,orchards,Orchards/Vineyards (perennial),Raspberries - prices per 100 kg,06199200,6108.099999999999
+2020,Portugal,PT,rowCrops,Row crops,Beetroot - prices per 100 kg,04199905,778.8
+2020,Portugal,PT,vegetables,Vegetables (fresh market/transplant),Green peas: all qualities - prices per 100 kg,04199000,3049.0
+2020,Romania,RO,arable,Arable (cereals/oilseeds),Dessert grapes: all varieties - prices per 100 kg,06410000,1066.5
+2020,Romania,RO,orchards,Orchards/Vineyards (perennial),Strawberries: all types of production - prices per 100 kg,06193000,1992.4
+2020,Romania,RO,rowCrops,Row crops,Beetroot - prices per 100 kg,04199905,615.9000000000001
+2020,Romania,RO,vegetables,Vegetables (fresh market/transplant),Garlic - prices per 100 kg,04199906,3395.7999999999997
+2020,Sweden,SE,arable,Arable (cereals/oilseeds),Rape - prices per 100 kg,02110000,354.3
+2020,Sweden,SE,orchards,Orchards/Vineyards (perennial),Strawberries in the open - prices per 100 kg,06193100,4800.1
+2020,Sweden,SE,rowCrops,Row crops,Main crop potatoes - prices per 100 kg,05120000,253.0
+2020,Sweden,SE,vegetables,Vegetables (fresh market/transplant),Cucumbers under glass: all qualities - prices per 100 kg,04194200,1127.6000000000001
+2020,Slovenia,SI,arable,Arable (cereals/oilseeds),Grapes for wine production - prices per 100 kg,06490000,487.8
+2020,Slovenia,SI,industrial,Specialty industrial crops,Hops: all varieties - prices per 100 kg,02920000,7206.2
+2020,Slovenia,SI,orchards,Orchards/Vineyards (perennial),Strawberries: all types of production - prices per 100 kg,06193000,4545.2
+2020,Slovenia,SI,rowCrops,Row crops,Early potatoes - prices per 100 kg,05110000,410.20000000000005
+2020,Slovenia,SI,vegetables,Vegetables (fresh market/transplant),Garlic - prices per 100 kg,04199906,6615.2
+2020,Slovakia,SK,arable,Arable (cereals/oilseeds),Dessert grapes: all varieties - prices per 100 kg,06410000,898.1
+2020,Slovakia,SK,orchards,Orchards/Vineyards (perennial),Strawberries in the open - prices per 100 kg,06193100,2448.8
+2020,Slovakia,SK,rowCrops,Row crops,Early potatoes - prices per 100 kg,05110000,356.9
+2020,Slovakia,SK,vegetables,Vegetables (fresh market/transplant),Lettuce in the open: all qualities - prices per 100 kg,04192100,950.1
+2021,Austria,AT,arable,Arable (cereals/oilseeds),Soya - prices per 100 kg,02130000,557.9
+2021,Austria,AT,industrial,Specialty industrial crops,Hops: all varieties - prices per 100 kg,02920000,7970.0
+2021,Austria,AT,orchards,Orchards/Vineyards (perennial),Apricots: all varieties - prices per 100 kg,06199100,4748.0
+2021,Austria,AT,rowCrops,Row crops,Early potatoes - prices per 100 kg,05110000,289.1
+2021,Belgium,BE,arable,Arable (cereals/oilseeds),Soft wheat - prices per 100 kg,01110000,233.0
+2021,Belgium,BE,industrial,Specialty industrial crops,Hops: all varieties - prices per 100 kg,02920000,5366.799999999999
+2021,Belgium,BE,orchards,Orchards/Vineyards (perennial),Raspberries - prices per 100 kg,06199200,8291.2
+2021,Belgium,BE,rowCrops,Row crops,Early potatoes - prices per 100 kg,05110000,501.4
+2021,Belgium,BE,vegetables,Vegetables (fresh market/transplant),Spinach - prices per 100 kg,04193000,2574.3
+2021,Bulgaria,BG,arable,Arable (cereals/oilseeds),Sunflowers - prices per 100 kg,02120000,510.09999999999997
+2021,Bulgaria,BG,industrial,Specialty industrial crops,Hops: all varieties - prices per 100 kg,02920000,5828.8
+2021,Bulgaria,BG,orchards,Orchards/Vineyards (perennial),Raspberries - prices per 100 kg,06199200,1694.7
+2021,Bulgaria,BG,rowCrops,Row crops,Main crop potatoes - prices per 100 kg,05120000,198.4
+2021,Bulgaria,BG,vegetables,Vegetables (fresh market/transplant),Garlic - prices per 100 kg,04199906,2467.7000000000003
+2021,Cyprus,CY,arable,Arable (cereals/oilseeds),Dessert grapes: all varieties - prices per 100 kg,06410000,886.1
+2021,Cyprus,CY,orchards,Orchards/Vineyards (perennial),Strawberries: all types of production - prices per 100 kg,06193000,2374.7
+2021,Cyprus,CY,rowCrops,Row crops,Beetroot - prices per 100 kg,04199905,505.3
+2021,Cyprus,CY,vegetables,Vegetables (fresh market/transplant),Cultivated mushrooms: all qualities - prices per 100 kg,04199901,2735.4
+2021,Czechia,CZ,arable,Arable (cereals/oilseeds),Grapes for wine production - prices per 100 kg,06490000,673.9
+2021,Czechia,CZ,industrial,Specialty industrial crops,Hops: all varieties - prices per 100 kg,02920000,9137.7
+2021,Czechia,CZ,orchards,Orchards/Vineyards (perennial),Strawberries: all types of production - prices per 100 kg,06193000,4088.5
+2021,Czechia,CZ,rowCrops,Row crops,Early potatoes - prices per 100 kg,05110000,303.4
+2021,Czechia,CZ,vegetables,Vegetables (fresh market/transplant),Garlic - prices per 100 kg,04199906,3744.1000000000004
+2021,Germany,DE,arable,Arable (cereals/oilseeds),Dessert grapes: all varieties - prices per 100 kg,06410000,1726.5
+2021,Germany,DE,industrial,Specialty industrial crops,Hops: all varieties - prices per 100 kg,02920000,6000.0
+2021,Germany,DE,orchards,Orchards/Vineyards (perennial),Raspberries - prices per 100 kg,06199200,7879.700000000001
+2021,Germany,DE,rowCrops,Row crops,Beetroot - prices per 100 kg,04199905,445.6
+2021,Germany,DE,vegetables,Vegetables (fresh market/transplant),Asparagus: all qualities - prices per 100 kg,04199910,5356.2
+2021,Denmark,DK,arable,Arable (cereals/oilseeds),Rape - prices per 100 kg,02110000,461.8
+2021,Denmark,DK,orchards,Orchards/Vineyards (perennial),Raspberries - prices per 100 kg,06199200,10902.6
+2021,Denmark,DK,rowCrops,Row crops,Main crop potatoes - prices per 100 kg,05120000,200.3
+2021,Denmark,DK,vegetables,Vegetables (fresh market/transplant),Tomatoes under glass: all qualities - prices per 100 kg,04122000,2121.2
+2021,Estonia,EE,arable,Arable (cereals/oilseeds),Rape - prices per 100 kg,02110000,516.1999999999999
+2021,Greece,EL,arable,Arable (cereals/oilseeds),Dessert grapes: all varieties - prices per 100 kg,06410000,752.6999999999999
+2021,Greece,EL,industrial,Specialty industrial crops,Raw tobacco: all varieties - prices per 100 kg,02300000,3665.0
+2021,Greece,EL,orchards,Orchards/Vineyards (perennial),Strawberries: all types of production - prices per 100 kg,06193000,2040.1
+2021,Greece,EL,rowCrops,Row crops,Beetroot - prices per 100 kg,04199905,773.7
+2021,Greece,EL,vegetables,Vegetables (fresh market/transplant),Garlic - prices per 100 kg,04199906,3440.7
+2021,Spain,ES,arable,Arable (cereals/oilseeds),Dessert grapes: all varieties - prices per 100 kg,06410000,808.5
+2021,Spain,ES,industrial,Specialty industrial crops,Hops: all varieties - prices per 100 kg,02920000,5310.1
+2021,Spain,ES,orchards,Orchards/Vineyards (perennial),Raspberries - prices per 100 kg,06199200,5552.9
+2021,Spain,ES,rowCrops,Row crops,Early potatoes - prices per 100 kg,05110000,372.70000000000005
+2021,Spain,ES,vegetables,Vegetables (fresh market/transplant),Green peas: all qualities - prices per 100 kg,04199000,2660.0
+2021,Finland,FI,arable,Arable (cereals/oilseeds),Rape - prices per 100 kg,02110000,505.5
+2021,Finland,FI,orchards,Orchards/Vineyards (perennial),Strawberries in the open - prices per 100 kg,06193100,4930.5
+2021,Finland,FI,rowCrops,Row crops,Early potatoes - prices per 100 kg,05110000,1206.9
+2021,Finland,FI,vegetables,Vegetables (fresh market/transplant),Tomatoes under glass: all qualities - prices per 100 kg,04122000,1914.9
+2021,Croatia,HR,arable,Arable (cereals/oilseeds),Dessert grapes: all varieties - prices per 100 kg,06410000,904.5
+2021,Croatia,HR,industrial,Specialty industrial crops,Raw tobacco: all varieties - prices per 100 kg,02300000,1872.1000000000001
+2021,Croatia,HR,orchards,Orchards/Vineyards (perennial),Strawberries under glass - prices per 100 kg,06193200,2931.3999999999996
+2021,Croatia,HR,rowCrops,Row crops,Early potatoes - prices per 100 kg,05110000,368.2
+2021,Croatia,HR,vegetables,Vegetables (fresh market/transplant),Garlic - prices per 100 kg,04199906,3350.4
+2021,Hungary,HU,arable,Arable (cereals/oilseeds),Sunflowers - prices per 100 kg,02120000,494.90000000000003
+2021,Hungary,HU,orchards,Orchards/Vineyards (perennial),Raspberries - prices per 100 kg,06199200,7251.1
+2021,Hungary,HU,rowCrops,Row crops,Early potatoes - prices per 100 kg,05110000,527.3
+2021,Hungary,HU,vegetables,Vegetables (fresh market/transplant),Green beans - prices per 100 kg,04197000,2491.9
+2021,Ireland,IE,arable,Arable (cereals/oilseeds),Barley - prices per 100 kg,01300000,234.89999999999998
+2021,Ireland,IE,vegetables,Vegetables (fresh market/transplant),Cultivated mushrooms: all qualities - prices per 100 kg,04199901,1750.0
+2021,Italy,IT,arable,Arable (cereals/oilseeds),Durum wheat - prices per 100 kg,01120000,365.6
+2021,Italy,IT,orchards,Orchards/Vineyards (perennial),Lemons: all varieties - prices per 100 kg,06230000,816.7
+2021,Italy,IT,rowCrops,Row crops,Main crop potatoes - prices per 100 kg,05120000,453.1
+2021,Italy,IT,vegetables,Vegetables (fresh market/transplant),Tomatoes in the open: all qualities - prices per 100 kg,04121000,808.4000000000001
+2021,Lithuania,LT,arable,Arable (cereals/oilseeds),Rape - prices per 100 kg,02110000,479.79999999999995
+2021,Lithuania,LT,orchards,Orchards/Vineyards (perennial),Strawberries under glass - prices per 100 kg,06193200,4803.3
+2021,Lithuania,LT,rowCrops,Row crops,Early potatoes - prices per 100 kg,05110000,354.5
+2021,Lithuania,LT,vegetables,Vegetables (fresh market/transplant),Spinach - prices per 100 kg,04193000,4349.8
+2021,Luxembourg,LU,arable,Arable (cereals/oilseeds),Grapes for wine production - prices per 100 kg,06490000,1229.0
+2021,Luxembourg,LU,orchards,Orchards/Vineyards (perennial),Strawberries: all types of production - prices per 100 kg,06193000,4750.0
+2021,Luxembourg,LU,rowCrops,Row crops,Main crop potatoes - prices per 100 kg,05120000,274.9
+2021,Latvia,LV,arable,Arable (cereals/oilseeds),Rape - prices per 100 kg,02110000,477.59999999999997
+2021,Latvia,LV,orchards,Orchards/Vineyards (perennial),Raspberries - prices per 100 kg,06199200,2741.1000000000004
+2021,Latvia,LV,rowCrops,Row crops,Early potatoes - prices per 100 kg,05110000,439.4
+2021,Latvia,LV,vegetables,Vegetables (fresh market/transplant),Lettuce under glass: all qualities - prices per 100 kg,04192200,4488.6
+2021,Malta,MT,arable,Arable (cereals/oilseeds),Dessert grapes: all varieties - prices per 100 kg,06410000,1488.8999999999999
+2021,Malta,MT,orchards,Orchards/Vineyards (perennial),Strawberries: all types of production - prices per 100 kg,06193000,1757.4
+2021,Malta,MT,rowCrops,Row crops,Main crop potatoes - prices per 100 kg,05120000,384.0
+2021,Malta,MT,vegetables,Vegetables (fresh market/transplant),Cultivated mushrooms: all qualities - prices per 100 kg,04199901,3576.3
+2021,Netherlands,NL,arable,Arable (cereals/oilseeds),Rape - prices per 100 kg,02110000,480.0
+2021,Netherlands,NL,orchards,Orchards/Vineyards (perennial),Strawberries: all types of production - prices per 100 kg,06193000,4434.3
+2021,Netherlands,NL,rowCrops,Row crops,Early potatoes - prices per 100 kg,05110000,496.70000000000005
+2021,Netherlands,NL,vegetables,Vegetables (fresh market/transplant),Asparagus: all qualities - prices per 100 kg,04199910,3857.1
+2021,Poland,PL,arable,Arable (cereals/oilseeds),Rape - prices per 100 kg,02110000,504.5
+2021,Poland,PL,industrial,Specialty industrial crops,Hops: all varieties - prices per 100 kg,02920000,3401.5
+2021,Poland,PL,orchards,Orchards/Vineyards (perennial),Raspberries - prices per 100 kg,06199200,2440.2000000000003
+2021,Poland,PL,rowCrops,Row crops,Early potatoes - prices per 100 kg,05110000,145.9
+2021,Poland,PL,vegetables,Vegetables (fresh market/transplant),Cultivated mushrooms: all qualities - prices per 100 kg,04199901,1133.5
+2021,Portugal,PT,arable,Arable (cereals/oilseeds),Dessert grapes: all varieties - prices per 100 kg,06410000,2656.9
+2021,Portugal,PT,industrial,Specialty industrial crops,Hops: all varieties - prices per 100 kg,02920000,4200.0
+2021,Portugal,PT,orchards,Orchards/Vineyards (perennial),Raspberries - prices per 100 kg,06199200,6615.900000000001
+2021,Portugal,PT,rowCrops,Row crops,Beetroot - prices per 100 kg,04199905,799.9
+2021,Portugal,PT,vegetables,Vegetables (fresh market/transplant),Green peas: all qualities - prices per 100 kg,04199000,2922.6
+2021,Romania,RO,arable,Arable (cereals/oilseeds),Dessert grapes: all varieties - prices per 100 kg,06410000,1078.9
+2021,Romania,RO,orchards,Orchards/Vineyards (perennial),Strawberries: all types of production - prices per 100 kg,06193000,1554.4
+2021,Romania,RO,rowCrops,Row crops,Beetroot - prices per 100 kg,04199905,646.1
+2021,Romania,RO,vegetables,Vegetables (fresh market/transplant),Garlic - prices per 100 kg,04199906,3366.9
+2021,Sweden,SE,arable,Arable (cereals/oilseeds),Rape - prices per 100 kg,02110000,544.0
+2021,Sweden,SE,orchards,Orchards/Vineyards (perennial),Strawberries in the open - prices per 100 kg,06193100,2972.7999999999997
+2021,Sweden,SE,rowCrops,Row crops,Main crop potatoes - prices per 100 kg,05120000,268.09999999999997
+2021,Sweden,SE,vegetables,Vegetables (fresh market/transplant),Tomatoes under glass: all qualities - prices per 100 kg,04122000,1244.6
+2021,Slovenia,SI,arable,Arable (cereals/oilseeds),Grapes for wine production - prices per 100 kg,06490000,566.7
+2021,Slovenia,SI,industrial,Specialty industrial crops,Hops: all varieties - prices per 100 kg,02920000,6873.5
+2021,Slovenia,SI,orchards,Orchards/Vineyards (perennial),Strawberries: all types of production - prices per 100 kg,06193000,4527.6
+2021,Slovenia,SI,rowCrops,Row crops,Early potatoes - prices per 100 kg,05110000,486.4
+2021,Slovenia,SI,vegetables,Vegetables (fresh market/transplant),Garlic - prices per 100 kg,04199906,6585.599999999999
+2021,Slovakia,SK,arable,Arable (cereals/oilseeds),Dessert grapes: all varieties - prices per 100 kg,06410000,940.4000000000001
+2021,Slovakia,SK,orchards,Orchards/Vineyards (perennial),Strawberries in the open - prices per 100 kg,06193100,2361.2
+2021,Slovakia,SK,rowCrops,Row crops,Early potatoes - prices per 100 kg,05110000,345.09999999999997
+2021,Slovakia,SK,vegetables,Vegetables (fresh market/transplant),Cucumbers in the open: all qualities - prices per 100 kg,04194100,1027.7
+2022,Austria,AT,arable,Arable (cereals/oilseeds),Grapes for wine production - prices per 100 kg,06490000,611.4
+2022,Austria,AT,industrial,Specialty industrial crops,Hops: all varieties - prices per 100 kg,02920000,9370.0
+2022,Austria,AT,orchards,Orchards/Vineyards (perennial),Strawberries in the open - prices per 100 kg,06193100,6010.2
+2022,Austria,AT,rowCrops,Row crops,Early potatoes - prices per 100 kg,05110000,275.5
+2022,Belgium,BE,arable,Arable (cereals/oilseeds),Soft wheat - prices per 100 kg,01110000,321.1
+2022,Belgium,BE,industrial,Specialty industrial crops,Hops: all varieties - prices per 100 kg,02920000,5504.2
+2022,Belgium,BE,orchards,Orchards/Vineyards (perennial),Raspberries - prices per 100 kg,06199200,9459.0
+2022,Belgium,BE,rowCrops,Row crops,Early potatoes - prices per 100 kg,05110000,279.8
+2022,Belgium,BE,vegetables,Vegetables (fresh market/transplant),Cultivated mushrooms: all qualities - prices per 100 kg,04199901,2169.3
+2022,Bulgaria,BG,arable,Arable (cereals/oilseeds),Soya - prices per 100 kg,02130000,661.9
+2022,Bulgaria,BG,industrial,Specialty industrial crops,Hops: all varieties - prices per 100 kg,02920000,7771.799999999999
+2022,Bulgaria,BG,orchards,Orchards/Vineyards (perennial),Raspberries - prices per 100 kg,06199200,2134.5
+2022,Bulgaria,BG,rowCrops,Row crops,Main crop potatoes - prices per 100 kg,05120000,277.0
+2022,Bulgaria,BG,vegetables,Vegetables (fresh market/transplant),Garlic - prices per 100 kg,04199906,2218.3
+2022,Cyprus,CY,arable,Arable (cereals/oilseeds),Dessert grapes: all varieties - prices per 100 kg,06410000,836.3
+2022,Cyprus,CY,orchards,Orchards/Vineyards (perennial),Strawberries: all types of production - prices per 100 kg,06193000,2121.6
+2022,Cyprus,CY,rowCrops,Row crops,Beetroot - prices per 100 kg,04199905,519.4
+2022,Cyprus,CY,vegetables,Vegetables (fresh market/transplant),Cultivated mushrooms: all qualities - prices per 100 kg,04199901,2729.4
+2022,Czechia,CZ,arable,Arable (cereals/oilseeds),Rape - prices per 100 kg,02110000,697.3000000000001
+2022,Czechia,CZ,industrial,Specialty industrial crops,Hops: all varieties - prices per 100 kg,02920000,10539.0
+2022,Czechia,CZ,orchards,Orchards/Vineyards (perennial),Strawberries: all types of production - prices per 100 kg,06193000,4886.8
+2022,Czechia,CZ,rowCrops,Row crops,Early potatoes - prices per 100 kg,05110000,441.70000000000005
+2022,Czechia,CZ,vegetables,Vegetables (fresh market/transplant),Garlic - prices per 100 kg,04199906,4037.3
+2022,Germany,DE,arable,Arable (cereals/oilseeds),Dessert grapes: all varieties - prices per 100 kg,06410000,1732.8
+2022,Germany,DE,industrial,Specialty industrial crops,Hops: all varieties - prices per 100 kg,02920000,6530.0
+2022,Germany,DE,orchards,Orchards/Vineyards (perennial),Raspberries - prices per 100 kg,06199200,8815.800000000001
+2022,Germany,DE,rowCrops,Row crops,Beetroot - prices per 100 kg,04199905,490.0
+2022,Germany,DE,vegetables,Vegetables (fresh market/transplant),Asparagus: all qualities - prices per 100 kg,04199910,5070.400000000001
+2022,Denmark,DK,arable,Arable (cereals/oilseeds),Rape - prices per 100 kg,02110000,578.6999999999999
+2022,Denmark,DK,orchards,Orchards/Vineyards (perennial),Raspberries - prices per 100 kg,06199200,11131.0
+2022,Denmark,DK,rowCrops,Row crops,Main crop potatoes - prices per 100 kg,05120000,309.7
+2022,Denmark,DK,vegetables,Vegetables (fresh market/transplant),Tomatoes under glass: all qualities - prices per 100 kg,04122000,2607.0
+2022,Estonia,EE,arable,Arable (cereals/oilseeds),Rape - prices per 100 kg,02110000,682.8
+2022,Greece,EL,arable,Arable (cereals/oilseeds),Dessert grapes: all varieties - prices per 100 kg,06410000,857.3000000000001
+2022,Greece,EL,industrial,Specialty industrial crops,Raw tobacco: all varieties - prices per 100 kg,02300000,3642.0
+2022,Greece,EL,orchards,Orchards/Vineyards (perennial),Strawberries: all types of production - prices per 100 kg,06193000,2653.8999999999996
+2022,Greece,EL,rowCrops,Row crops,Beetroot - prices per 100 kg,04199905,824.5999999999999
+2022,Greece,EL,vegetables,Vegetables (fresh market/transplant),Garlic - prices per 100 kg,04199906,4099.8
+2022,Spain,ES,arable,Arable (cereals/oilseeds),Dessert grapes: all varieties - prices per 100 kg,06410000,758.1
+2022,Spain,ES,industrial,Specialty industrial crops,Hops: all varieties - prices per 100 kg,02920000,5271.4
+2022,Spain,ES,orchards,Orchards/Vineyards (perennial),Raspberries - prices per 100 kg,06199200,5494.299999999999
+2022,Spain,ES,rowCrops,Row crops,Early potatoes - prices per 100 kg,05110000,438.7
+2022,Spain,ES,vegetables,Vegetables (fresh market/transplant),Green beans: all qualities - prices per 100 kg,04198100,2467.8
+2022,Finland,FI,arable,Arable (cereals/oilseeds),Rape - prices per 100 kg,02110000,647.0999999999999
+2022,Finland,FI,orchards,Orchards/Vineyards (perennial),Raspberries - prices per 100 kg,06199200,13446.099999999999
+2022,Finland,FI,rowCrops,Row crops,Beetroot - prices per 100 kg,04199905,1012.0
+2022,Finland,FI,vegetables,Vegetables (fresh market/transplant),Leeks in the open - prices per 100 kg,04199903,2137.9
+2022,Croatia,HR,arable,Arable (cereals/oilseeds),Dessert grapes: all varieties - prices per 100 kg,06410000,1198.0
+2022,Croatia,HR,industrial,Specialty industrial crops,Raw tobacco: all varieties - prices per 100 kg,02300000,2236.6
+2022,Croatia,HR,orchards,Orchards/Vineyards (perennial),Strawberries under glass - prices per 100 kg,06193200,2733.7
+2022,Croatia,HR,rowCrops,Row crops,Early potatoes - prices per 100 kg,05110000,463.5
+2022,Croatia,HR,vegetables,Vegetables (fresh market/transplant),Garlic - prices per 100 kg,04199906,3746.3999999999996
+2022,Hungary,HU,arable,Arable (cereals/oilseeds),Rape - prices per 100 kg,02110000,722.2
+2022,Hungary,HU,orchards,Orchards/Vineyards (perennial),Raspberries - prices per 100 kg,06199200,6158.3
+2022,Hungary,HU,rowCrops,Row crops,Early potatoes - prices per 100 kg,05110000,412.0
+2022,Hungary,HU,vegetables,Vegetables (fresh market/transplant),Green beans - prices per 100 kg,04197000,2684.9
+2022,Ireland,IE,arable,Arable (cereals/oilseeds),Barley - prices per 100 kg,01300000,362.8
+2022,Ireland,IE,vegetables,Vegetables (fresh market/transplant),Cultivated mushrooms: all qualities - prices per 100 kg,04199901,1750.0
+2022,Italy,IT,arable,Arable (cereals/oilseeds),Durum wheat - prices per 100 kg,01120000,486.70000000000005
+2022,Italy,IT,orchards,Orchards/Vineyards (perennial),Lemons: all varieties - prices per 100 kg,06230000,1123.7
+2022,Italy,IT,rowCrops,Row crops,Main crop potatoes - prices per 100 kg,05120000,567.1
+2022,Italy,IT,vegetables,Vegetables (fresh market/transplant),Tomatoes in the open: all qualities - prices per 100 kg,04121000,755.6
+2022,Lithuania,LT,arable,Arable (cereals/oilseeds),Rape - prices per 100 kg,02110000,656.9
+2022,Lithuania,LT,orchards,Orchards/Vineyards (perennial),Raspberries - prices per 100 kg,06199200,6895.2
+2022,Lithuania,LT,rowCrops,Row crops,Early potatoes - prices per 100 kg,05110000,411.3
+2022,Lithuania,LT,vegetables,Vegetables (fresh market/transplant),Spinach - prices per 100 kg,04193000,5042.5
+2022,Luxembourg,LU,arable,Arable (cereals/oilseeds),Grapes for wine production - prices per 100 kg,06490000,1303.0
+2022,Luxembourg,LU,orchards,Orchards/Vineyards (perennial),Strawberries: all types of production - prices per 100 kg,06193000,4800.0
+2022,Luxembourg,LU,rowCrops,Row crops,Main crop potatoes - prices per 100 kg,05120000,433.5
+2022,Latvia,LV,arable,Arable (cereals/oilseeds),Rape - prices per 100 kg,02110000,574.5
+2022,Latvia,LV,orchards,Orchards/Vineyards (perennial),Raspberries - prices per 100 kg,06199200,3311.2
+2022,Latvia,LV,rowCrops,Row crops,Early potatoes - prices per 100 kg,05110000,498.40000000000003
+2022,Latvia,LV,vegetables,Vegetables (fresh market/transplant),Lettuce under glass: all qualities - prices per 100 kg,04192200,5038.7
+2022,Malta,MT,arable,Arable (cereals/oilseeds),Dessert grapes: all varieties - prices per 100 kg,06410000,1223.1999999999998
+2022,Malta,MT,orchards,Orchards/Vineyards (perennial),Strawberries: all types of production - prices per 100 kg,06193000,2413.5
+2022,Malta,MT,rowCrops,Row crops,Main crop potatoes - prices per 100 kg,05120000,494.4
+2022,Malta,MT,vegetables,Vegetables (fresh market/transplant),Cultivated mushrooms: all qualities - prices per 100 kg,04199901,3722.4
+2022,Netherlands,NL,arable,Arable (cereals/oilseeds),Rape - prices per 100 kg,02110000,515.0
+2022,Netherlands,NL,orchards,Orchards/Vineyards (perennial),Strawberries: all types of production - prices per 100 kg,06193000,4288.0
+2022,Netherlands,NL,rowCrops,Row crops,Early potatoes - prices per 100 kg,05110000,390.3
+2022,Netherlands,NL,vegetables,Vegetables (fresh market/transplant),Asparagus: all qualities - prices per 100 kg,04199910,4298.2
+2022,Poland,PL,arable,Arable (cereals/oilseeds),Rape - prices per 100 kg,02110000,670.8
+2022,Poland,PL,industrial,Specialty industrial crops,Raw tobacco: all varieties - prices per 100 kg,02300000,3774.6
+2022,Poland,PL,orchards,Orchards/Vineyards (perennial),Raspberries - prices per 100 kg,06199200,2759.4
+2022,Poland,PL,rowCrops,Row crops,Main crop potatoes - prices per 100 kg,05120000,192.8
+2022,Poland,PL,vegetables,Vegetables (fresh market/transplant),Cultivated mushrooms: all qualities - prices per 100 kg,04199901,1240.2
+2022,Portugal,PT,arable,Arable (cereals/oilseeds),Dessert grapes: all varieties - prices per 100 kg,06410000,3715.8999999999996
+2022,Portugal,PT,industrial,Specialty industrial crops,Hops: all varieties - prices per 100 kg,02920000,4200.0
+2022,Portugal,PT,orchards,Orchards/Vineyards (perennial),Raspberries - prices per 100 kg,06199200,6109.9
+2022,Portugal,PT,rowCrops,Row crops,Beetroot - prices per 100 kg,04199905,866.2
+2022,Portugal,PT,vegetables,Vegetables (fresh market/transplant),Green peas: all qualities - prices per 100 kg,04199000,3465.2999999999997
+2022,Romania,RO,arable,Arable (cereals/oilseeds),Dessert grapes: all varieties - prices per 100 kg,06410000,1176.2
+2022,Romania,RO,orchards,Orchards/Vineyards (perennial),Strawberries: all types of production - prices per 100 kg,06193000,1654.7
+2022,Romania,RO,rowCrops,Row crops,Beetroot - prices per 100 kg,04199905,770.6
+2022,Romania,RO,vegetables,Vegetables (fresh market/transplant),Garlic - prices per 100 kg,04199906,3579.2000000000003
+2022,Sweden,SE,arable,Arable (cereals/oilseeds),Rape - prices per 100 kg,02110000,636.1
+2022,Sweden,SE,orchards,Orchards/Vineyards (perennial),Strawberries in the open - prices per 100 kg,06193100,2665.7999999999997
+2022,Sweden,SE,rowCrops,Row crops,Early potatoes - prices per 100 kg,05110000,484.09999999999997
+2022,Sweden,SE,vegetables,Vegetables (fresh market/transplant),Tomatoes under glass: all qualities - prices per 100 kg,04122000,1244.5
+2022,Slovenia,SI,arable,Arable (cereals/oilseeds),Grapes for wine production - prices per 100 kg,06490000,646.3
+2022,Slovenia,SI,industrial,Specialty industrial crops,Hops: all varieties - prices per 100 kg,02920000,6915.299999999999
+2022,Slovenia,SI,orchards,Orchards/Vineyards (perennial),Strawberries: all types of production - prices per 100 kg,06193000,4799.0
+2022,Slovenia,SI,rowCrops,Row crops,Early potatoes - prices per 100 kg,05110000,564.9
+2022,Slovenia,SI,vegetables,Vegetables (fresh market/transplant),Garlic - prices per 100 kg,04199906,6967.9
+2022,Slovakia,SK,arable,Arable (cereals/oilseeds),Dessert grapes: all varieties - prices per 100 kg,06410000,1015.9000000000001
+2022,Slovakia,SK,orchards,Orchards/Vineyards (perennial),Strawberries in the open - prices per 100 kg,06193100,2844.8
+2022,Slovakia,SK,rowCrops,Row crops,Early potatoes - prices per 100 kg,05110000,462.9
+2022,Slovakia,SK,vegetables,Vegetables (fresh market/transplant),Cucumbers in the open: all qualities - prices per 100 kg,04194100,1130.6
+2023,Austria,AT,arable,Arable (cereals/oilseeds),Grapes for wine production - prices per 100 kg,06490000,552.7
+2023,Austria,AT,industrial,Specialty industrial crops,Hops: all varieties - prices per 100 kg,02920000,10180.0
+2023,Austria,AT,orchards,Orchards/Vineyards (perennial),Strawberries in the open - prices per 100 kg,06193100,8516.8
+2023,Austria,AT,rowCrops,Row crops,Early potatoes - prices per 100 kg,05110000,500.79999999999995
+2023,Belgium,BE,arable,Arable (cereals/oilseeds),Rape - prices per 100 kg,02110000,335.90000000000003
+2023,Belgium,BE,industrial,Specialty industrial crops,Hops: all varieties - prices per 100 kg,02920000,5504.2
+2023,Belgium,BE,orchards,Orchards/Vineyards (perennial),Raspberries - prices per 100 kg,06199200,8456.3
+2023,Belgium,BE,rowCrops,Row crops,Early potatoes - prices per 100 kg,05110000,852.0999999999999
+2023,Belgium,BE,vegetables,Vegetables (fresh market/transplant),Asparagus: all qualities - prices per 100 kg,04199910,2482.5
+2023,Bulgaria,BG,arable,Arable (cereals/oilseeds),Dessert grapes: all varieties - prices per 100 kg,06410000,578.3
+2023,Bulgaria,BG,industrial,Specialty industrial crops,Hops: all varieties - prices per 100 kg,02920000,8436.4
+2023,Bulgaria,BG,orchards,Orchards/Vineyards (perennial),Raspberries - prices per 100 kg,06199200,2064.7999999999997
+2023,Bulgaria,BG,rowCrops,Row crops,Main crop potatoes - prices per 100 kg,05120000,332.8
+2023,Bulgaria,BG,vegetables,Vegetables (fresh market/transplant),Cultivated mushrooms: all qualities - prices per 100 kg,04199901,2161.3999999999996
+2023,Cyprus,CY,arable,Arable (cereals/oilseeds),Dessert grapes: all varieties - prices per 100 kg,06410000,1066.0
+2023,Cyprus,CY,orchards,Orchards/Vineyards (perennial),Strawberries: all types of production - prices per 100 kg,06193000,2172.5
+2023,Cyprus,CY,rowCrops,Row crops,Beetroot - prices per 100 kg,04199905,514.8
+2023,Cyprus,CY,vegetables,Vegetables (fresh market/transplant),Cultivated mushrooms: all qualities - prices per 100 kg,04199901,3293.2
+2023,Czechia,CZ,arable,Arable (cereals/oilseeds),Grapes for wine production - prices per 100 kg,06490000,604.9
+2023,Czechia,CZ,industrial,Specialty industrial crops,Hops: all varieties - prices per 100 kg,02920000,11201.5
+2023,Czechia,CZ,orchards,Orchards/Vineyards (perennial),Strawberries: all types of production - prices per 100 kg,06193000,4776.3
+2023,Czechia,CZ,rowCrops,Row crops,Early potatoes - prices per 100 kg,05110000,642.8
+2023,Czechia,CZ,vegetables,Vegetables (fresh market/transplant),Garlic - prices per 100 kg,04199906,5651.1
+2023,Germany,DE,arable,Arable (cereals/oilseeds),Dessert grapes: all varieties - prices per 100 kg,06410000,1282.7
+2023,Germany,DE,industrial,Specialty industrial crops,Hops: all varieties - prices per 100 kg,02920000,5989.0
+2023,Germany,DE,orchards,Orchards/Vineyards (perennial),Raspberries - prices per 100 kg,06199200,9578.099999999999
+2023,Germany,DE,rowCrops,Row crops,Early potatoes - prices per 100 kg,05110000,748.4000000000001
+2023,Germany,DE,vegetables,Vegetables (fresh market/transplant),Asparagus: all qualities - prices per 100 kg,04199910,5726.7
+2023,Denmark,DK,arable,Arable (cereals/oilseeds),Rape - prices per 100 kg,02110000,545.5
+2023,Denmark,DK,orchards,Orchards/Vineyards (perennial),Raspberries - prices per 100 kg,06199200,10825.3
+2023,Denmark,DK,rowCrops,Row crops,Main crop potatoes - prices per 100 kg,05120000,379.4
+2023,Denmark,DK,vegetables,Vegetables (fresh market/transplant),Lettuce under glass: all qualities - prices per 100 kg,04192200,6896.5
+2023,Estonia,EE,arable,Arable (cereals/oilseeds),Rape - prices per 100 kg,02110000,462.1
+2023,Greece,EL,arable,Arable (cereals/oilseeds),Dessert grapes: all varieties - prices per 100 kg,06410000,1296.1000000000001
+2023,Greece,EL,industrial,Specialty industrial crops,Raw tobacco: all varieties - prices per 100 kg,02300000,3640.0
+2023,Greece,EL,orchards,Orchards/Vineyards (perennial),Strawberries: all types of production - prices per 100 kg,06193000,2455.1
+2023,Greece,EL,rowCrops,Row crops,Beetroot - prices per 100 kg,04199905,887.4
+2023,Greece,EL,vegetables,Vegetables (fresh market/transplant),Garlic - prices per 100 kg,04199906,4582.900000000001
+2023,Spain,ES,arable,Arable (cereals/oilseeds),Dessert grapes: all varieties - prices per 100 kg,06410000,905.0
+2023,Spain,ES,industrial,Specialty industrial crops,Hops: all varieties - prices per 100 kg,02920000,4956.5
+2023,Spain,ES,orchards,Orchards/Vineyards (perennial),Raspberries - prices per 100 kg,06199200,7160.700000000001
+2023,Spain,ES,rowCrops,Row crops,Early potatoes - prices per 100 kg,05110000,661.5
+2023,Spain,ES,vegetables,Vegetables (fresh market/transplant),Green peas: all qualities - prices per 100 kg,04199000,2863.5
+2023,Finland,FI,arable,Arable (cereals/oilseeds),Rape - prices per 100 kg,02110000,515.8
+2023,Finland,FI,orchards,Orchards/Vineyards (perennial),Raspberries - prices per 100 kg,06199200,14436.7
+2023,Finland,FI,rowCrops,Row crops,Beetroot - prices per 100 kg,04199905,947.4
+2023,Finland,FI,vegetables,Vegetables (fresh market/transplant),Tomatoes under glass: all qualities - prices per 100 kg,04122000,2125.9
+2023,Croatia,HR,arable,Arable (cereals/oilseeds),Dessert grapes: all varieties - prices per 100 kg,06410000,1382.8999999999999
+2023,Croatia,HR,industrial,Specialty industrial crops,Raw tobacco: all varieties - prices per 100 kg,02300000,3018.2999999999997
+2023,Croatia,HR,orchards,Orchards/Vineyards (perennial),Strawberries under glass - prices per 100 kg,06193200,3085.1
+2023,Croatia,HR,rowCrops,Row crops,Early potatoes - prices per 100 kg,05110000,683.4000000000001
+2023,Croatia,HR,vegetables,Vegetables (fresh market/transplant),Garlic - prices per 100 kg,04199906,3956.6000000000004
+2023,Hungary,HU,arable,Arable (cereals/oilseeds),Soya - prices per 100 kg,02130000,457.40000000000003
+2023,Hungary,HU,orchards,Orchards/Vineyards (perennial),Raspberries - prices per 100 kg,06199200,7395.2
+2023,Hungary,HU,rowCrops,Row crops,Early potatoes - prices per 100 kg,05110000,715.9000000000001
+2023,Hungary,HU,vegetables,Vegetables (fresh market/transplant),Asparagus: all qualities - prices per 100 kg,04199910,2165.1
+2023,Ireland,IE,arable,Arable (cereals/oilseeds),Barley - prices per 100 kg,01300000,270.59999999999997
+2023,Ireland,IE,vegetables,Vegetables (fresh market/transplant),Cultivated mushrooms: all qualities - prices per 100 kg,04199901,2037.6
+2023,Italy,IT,arable,Arable (cereals/oilseeds),Durum wheat - prices per 100 kg,01120000,377.2
+2023,Italy,IT,orchards,Orchards/Vineyards (perennial),Lemons: all varieties - prices per 100 kg,06230000,1402.0
+2023,Italy,IT,rowCrops,Row crops,Main crop potatoes - prices per 100 kg,05120000,716.0
+2023,Italy,IT,vegetables,Vegetables (fresh market/transplant),Tomatoes in the open: all qualities - prices per 100 kg,04121000,861.1
+2023,Lithuania,LT,arable,Arable (cereals/oilseeds),Rape - prices per 100 kg,02110000,451.2
+2023,Lithuania,LT,orchards,Orchards/Vineyards (perennial),Raspberries - prices per 100 kg,06199200,6985.5
+2023,Lithuania,LT,rowCrops,Row crops,Early potatoes - prices per 100 kg,05110000,507.2
+2023,Lithuania,LT,vegetables,Vegetables (fresh market/transplant),Spinach - prices per 100 kg,04193000,5257.1
+2023,Luxembourg,LU,arable,Arable (cereals/oilseeds),Grapes for wine production - prices per 100 kg,06490000,1343.0
+2023,Luxembourg,LU,orchards,Orchards/Vineyards (perennial),Strawberries: all types of production - prices per 100 kg,06193000,4950.0
+2023,Luxembourg,LU,rowCrops,Row crops,Main crop potatoes - prices per 100 kg,05120000,485.90000000000003
+2023,Latvia,LV,arable,Arable (cereals/oilseeds),Rape - prices per 100 kg,02110000,408.6
+2023,Latvia,LV,orchards,Orchards/Vineyards (perennial),Strawberries: all types of production - prices per 100 kg,06193000,5037.7
+2023,Latvia,LV,rowCrops,Row crops,Early potatoes - prices per 100 kg,05110000,593.1
+2023,Latvia,LV,vegetables,Vegetables (fresh market/transplant),Lettuce under glass: all qualities - prices per 100 kg,04192200,5144.0
+2023,Malta,MT,arable,Arable (cereals/oilseeds),Dessert grapes: all varieties - prices per 100 kg,06410000,1800.5
+2023,Malta,MT,orchards,Orchards/Vineyards (perennial),Plums: all varieties  - prices per 100 kg,06192000,2344.6
+2023,Malta,MT,rowCrops,Row crops,Main crop potatoes - prices per 100 kg,05120000,585.1
+2023,Malta,MT,vegetables,Vegetables (fresh market/transplant),Cultivated mushrooms: all qualities - prices per 100 kg,04199901,4001.3
+2023,Netherlands,NL,arable,Arable (cereals/oilseeds),Rape - prices per 100 kg,02110000,430.0
+2023,Netherlands,NL,orchards,Orchards/Vineyards (perennial),Strawberries: all types of production - prices per 100 kg,06193000,4694.9
+2023,Netherlands,NL,rowCrops,Row crops,Early potatoes - prices per 100 kg,05110000,948.1999999999999
+2023,Netherlands,NL,vegetables,Vegetables (fresh market/transplant),Asparagus: all qualities - prices per 100 kg,04199910,4452.200000000001
+2023,Poland,PL,arable,Arable (cereals/oilseeds),Rape - prices per 100 kg,02110000,433.6
+2023,Poland,PL,industrial,Specialty industrial crops,Raw tobacco: all varieties - prices per 100 kg,02300000,4941.5
+2023,Poland,PL,orchards,Orchards/Vineyards (perennial),Raspberries - prices per 100 kg,06199200,1458.7
+2023,Poland,PL,rowCrops,Row crops,Main crop potatoes - prices per 100 kg,05120000,252.10000000000002
+2023,Poland,PL,vegetables,Vegetables (fresh market/transplant),Cultivated mushrooms: all qualities - prices per 100 kg,04199901,1394.6000000000001
+2023,Portugal,PT,arable,Arable (cereals/oilseeds),Dessert grapes: all varieties - prices per 100 kg,06410000,3153.5
+2023,Portugal,PT,industrial,Specialty industrial crops,Hops: all varieties - prices per 100 kg,02920000,4500.0
+2023,Portugal,PT,orchards,Orchards/Vineyards (perennial),Raspberries - prices per 100 kg,06199200,6651.7
+2023,Portugal,PT,rowCrops,Row crops,Beetroot - prices per 100 kg,04199905,1012.2
+2023,Portugal,PT,vegetables,Vegetables (fresh market/transplant),Green peas: all qualities - prices per 100 kg,04199000,4427.0
+2023,Romania,RO,arable,Arable (cereals/oilseeds),Dessert grapes: all varieties - prices per 100 kg,06410000,1162.3999999999999
+2023,Romania,RO,orchards,Orchards/Vineyards (perennial),Apricots: all varieties - prices per 100 kg,06199100,1609.1999999999998
+2023,Romania,RO,rowCrops,Row crops,Beetroot - prices per 100 kg,04199905,897.6
+2023,Romania,RO,vegetables,Vegetables (fresh market/transplant),Garlic - prices per 100 kg,04199906,3596.3
+2023,Sweden,SE,arable,Arable (cereals/oilseeds),Rape - prices per 100 kg,02110000,433.1
+2023,Sweden,SE,orchards,Orchards/Vineyards (perennial),Strawberries in the open - prices per 100 kg,06193100,3368.8999999999996
+2023,Sweden,SE,rowCrops,Row crops,Early potatoes - prices per 100 kg,05110000,359.3
+2023,Sweden,SE,vegetables,Vegetables (fresh market/transplant),Tomatoes under glass: all qualities - prices per 100 kg,04122000,1359.3000000000002
+2023,Slovenia,SI,arable,Arable (cereals/oilseeds),Grapes for wine production - prices per 100 kg,06490000,766.7
+2023,Slovenia,SI,industrial,Specialty industrial crops,Hops: all varieties - prices per 100 kg,02920000,7824.9
+2023,Slovenia,SI,orchards,Orchards/Vineyards (perennial),Strawberries: all types of production - prices per 100 kg,06193000,5197.200000000001
+2023,Slovenia,SI,rowCrops,Row crops,Early potatoes - prices per 100 kg,05110000,706.2
+2023,Slovenia,SI,vegetables,Vegetables (fresh market/transplant),Garlic - prices per 100 kg,04199906,7432.799999999999
+2023,Slovakia,SK,arable,Arable (cereals/oilseeds),Dessert grapes: all varieties - prices per 100 kg,06410000,995.3
+2023,Slovakia,SK,orchards,Orchards/Vineyards (perennial),Strawberries in the open - prices per 100 kg,06193100,2959.1000000000004
+2023,Slovakia,SK,rowCrops,Row crops,Early potatoes - prices per 100 kg,05110000,676.7
+2023,Slovakia,SK,vegetables,Vegetables (fresh market/transplant),Cucumbers in the open: all qualities - prices per 100 kg,04194100,1371.8000000000002
+2024,Austria,AT,arable,Arable (cereals/oilseeds),Grapes for wine production - prices per 100 kg,06490000,586.5999999999999
+2024,Austria,AT,industrial,Specialty industrial crops,Hops: all varieties - prices per 100 kg,02920000,10190.0
+2024,Austria,AT,orchards,Orchards/Vineyards (perennial),Strawberries in the open - prices per 100 kg,06193100,7071.7
+2024,Austria,AT,rowCrops,Row crops,Early potatoes - prices per 100 kg,05110000,375.4
+2024,Belgium,BE,arable,Arable (cereals/oilseeds),Soft wheat - prices per 100 kg,01110000,181.29999999999998
+2024,Belgium,BE,industrial,Specialty industrial crops,Hops: all varieties - prices per 100 kg,02920000,5779.400000000001
+2024,Belgium,BE,orchards,Orchards/Vineyards (perennial),Raspberries - prices per 100 kg,06199200,8846.4
+2024,Belgium,BE,rowCrops,Row crops,Early potatoes - prices per 100 kg,05110000,510.7
+2024,Belgium,BE,vegetables,Vegetables (fresh market/transplant),Asparagus: all qualities - prices per 100 kg,04199910,3224.7000000000003
+2024,Bulgaria,BG,arable,Arable (cereals/oilseeds),Dessert grapes: all varieties - prices per 100 kg,06410000,626.0
+2024,Bulgaria,BG,industrial,Specialty industrial crops,Raw tobacco: all varieties - prices per 100 kg,02300000,6026.799999999999
+2024,Bulgaria,BG,orchards,Orchards/Vineyards (perennial),Raspberries - prices per 100 kg,06199200,1980.5
+2024,Bulgaria,BG,rowCrops,Row crops,Main crop potatoes - prices per 100 kg,05120000,339.7
+2024,Bulgaria,BG,vegetables,Vegetables (fresh market/transplant),Garlic - prices per 100 kg,04199906,1865.6999999999998
+2024,Cyprus,CY,arable,Arable (cereals/oilseeds),Dessert grapes: all varieties - prices per 100 kg,06410000,1612.5
+2024,Cyprus,CY,orchards,Orchards/Vineyards (perennial),Strawberries: all types of production - prices per 100 kg,06193000,2069.3
+2024,Cyprus,CY,rowCrops,Row crops,Main crop potatoes - prices per 100 kg,05120000,451.9
+2024,Cyprus,CY,vegetables,Vegetables (fresh market/transplant),Cultivated mushrooms: all qualities - prices per 100 kg,04199901,3293.2
+2024,Czechia,CZ,arable,Arable (cereals/oilseeds),Grapes for wine production - prices per 100 kg,06490000,627.4
+2024,Czechia,CZ,industrial,Specialty industrial crops,Hops: all varieties - prices per 100 kg,02920000,10765.9
+2024,Czechia,CZ,orchards,Orchards/Vineyards (perennial),Strawberries: all types of production - prices per 100 kg,06193000,4576.4
+2024,Czechia,CZ,rowCrops,Row crops,Early potatoes - prices per 100 kg,05110000,507.2
+2024,Czechia,CZ,vegetables,Vegetables (fresh market/transplant),Garlic - prices per 100 kg,04199906,4936.3
+2024,Germany,DE,arable,Arable (cereals/oilseeds),Dessert grapes: all varieties - prices per 100 kg,06410000,1886.8000000000002
+2024,Germany,DE,industrial,Specialty industrial crops,Hops: all varieties - prices per 100 kg,02920000,6210.0
+2024,Germany,DE,orchards,Orchards/Vineyards (perennial),Raspberries - prices per 100 kg,06199200,10743.900000000001
+2024,Germany,DE,rowCrops,Row crops,Early potatoes - prices per 100 kg,05110000,632.9
+2024,Germany,DE,vegetables,Vegetables (fresh market/transplant),Asparagus: all qualities - prices per 100 kg,04199910,7277.0
+2024,Denmark,DK,arable,Arable (cereals/oilseeds),Rape - prices per 100 kg,02110000,459.79999999999995
+2024,Denmark,DK,orchards,Orchards/Vineyards (perennial),Raspberries - prices per 100 kg,06199200,11611.6
+2024,Denmark,DK,rowCrops,Row crops,Main crop potatoes - prices per 100 kg,05120000,495.0
+2024,Denmark,DK,vegetables,Vegetables (fresh market/transplant),Lettuce under glass: all qualities - prices per 100 kg,04192200,6627.0
+2024,Estonia,EE,arable,Arable (cereals/oilseeds),Rape - prices per 100 kg,02110000,454.79999999999995
+2024,Greece,EL,arable,Arable (cereals/oilseeds),Dessert grapes: all varieties - prices per 100 kg,06410000,1293.6000000000001
+2024,Greece,EL,industrial,Specialty industrial crops,Raw tobacco: all varieties - prices per 100 kg,02300000,4560.0
+2024,Greece,EL,orchards,Orchards/Vineyards (perennial),Strawberries: all types of production - prices per 100 kg,06193000,2668.3999999999996
+2024,Greece,EL,rowCrops,Row crops,Beetroot - prices per 100 kg,04199905,914.7
+2024,Greece,EL,vegetables,Vegetables (fresh market/transplant),Garlic - prices per 100 kg,04199906,5490.5
+2024,Spain,ES,arable,Arable (cereals/oilseeds),Dessert grapes: all varieties - prices per 100 kg,06410000,928.0
+2024,Spain,ES,industrial,Specialty industrial crops,Raw tobacco: all varieties - prices per 100 kg,02300000,4129.5
+2024,Spain,ES,orchards,Orchards/Vineyards (perennial),Strawberries: all types of production - prices per 100 kg,06193000,1918.1
+2024,Spain,ES,rowCrops,Row crops,Early potatoes - prices per 100 kg,05110000,577.6
+2024,Spain,ES,vegetables,Vegetables (fresh market/transplant),Green beans: all qualities - prices per 100 kg,04198100,2764.7000000000003
+2024,Finland,FI,arable,Arable (cereals/oilseeds),Rape - prices per 100 kg,02110000,466.2
+2024,Finland,FI,orchards,Orchards/Vineyards (perennial),Raspberries - prices per 100 kg,06199200,16370.0
+2024,Finland,FI,rowCrops,Row crops,Early potatoes - prices per 100 kg,05110000,450.79999999999995
+2024,Finland,FI,vegetables,Vegetables (fresh market/transplant),Lettuce under glass: all qualities - prices per 100 kg,04192200,6083.3
+2024,Croatia,HR,arable,Arable (cereals/oilseeds),Dessert grapes: all varieties - prices per 100 kg,06410000,1467.4
+2024,Croatia,HR,industrial,Specialty industrial crops,Raw tobacco: all varieties - prices per 100 kg,02300000,3378.2
+2024,Croatia,HR,orchards,Orchards/Vineyards (perennial),Strawberries under glass - prices per 100 kg,06193200,3468.7
+2024,Croatia,HR,rowCrops,Row crops,Early potatoes - prices per 100 kg,05110000,547.4
+2024,Croatia,HR,vegetables,Vegetables (fresh market/transplant),Garlic - prices per 100 kg,04199906,5333.7
+2024,Hungary,HU,arable,Arable (cereals/oilseeds),Rape - prices per 100 kg,02110000,441.1
+2024,Hungary,HU,orchards,Orchards/Vineyards (perennial),Raspberries - prices per 100 kg,06199200,7256.0
+2024,Hungary,HU,rowCrops,Row crops,Early potatoes - prices per 100 kg,05110000,553.6
+2024,Hungary,HU,vegetables,Vegetables (fresh market/transplant),Green beans - prices per 100 kg,04197000,3862.9
+2024,Ireland,IE,arable,Arable (cereals/oilseeds),Barley - prices per 100 kg,01300000,245.3
+2024,Ireland,IE,vegetables,Vegetables (fresh market/transplant),Cultivated mushrooms: all qualities - prices per 100 kg,04199901,2251.0
+2024,Italy,IT,arable,Arable (cereals/oilseeds),Durum wheat - prices per 100 kg,01120000,335.90000000000003
+2024,Italy,IT,orchards,Orchards/Vineyards (perennial),Lemons: all varieties - prices per 100 kg,06230000,944.0
+2024,Italy,IT,rowCrops,Row crops,Main crop potatoes - prices per 100 kg,05120000,723.3
+2024,Italy,IT,vegetables,Vegetables (fresh market/transplant),Tomatoes in the open: all qualities - prices per 100 kg,04121000,872.6
+2024,Lithuania,LT,arable,Arable (cereals/oilseeds),Rape - prices per 100 kg,02110000,453.2
+2024,Lithuania,LT,orchards,Orchards/Vineyards (perennial),Raspberries - prices per 100 kg,06199200,9238.9
+2024,Lithuania,LT,rowCrops,Row crops,Early potatoes - prices per 100 kg,05110000,467.9
+2024,Lithuania,LT,vegetables,Vegetables (fresh market/transplant),Spinach - prices per 100 kg,04193000,6013.6
+2024,Luxembourg,LU,arable,Arable (cereals/oilseeds),Grapes for wine production - prices per 100 kg,06490000,1396.0
+2024,Luxembourg,LU,orchards,Orchards/Vineyards (perennial),Strawberries: all types of production - prices per 100 kg,06193000,5100.0
+2024,Luxembourg,LU,rowCrops,Row crops,Main crop potatoes - prices per 100 kg,05120000,476.0
+2024,Latvia,LV,arable,Arable (cereals/oilseeds),Rape - prices per 100 kg,02110000,453.0
+2024,Latvia,LV,orchards,Orchards/Vineyards (perennial),Strawberries: all types of production - prices per 100 kg,06193000,5402.4
+2024,Latvia,LV,rowCrops,Row crops,Early potatoes - prices per 100 kg,05110000,564.2
+2024,Latvia,LV,vegetables,Vegetables (fresh market/transplant),Lettuce under glass: all qualities - prices per 100 kg,04192200,4443.1
+2024,Malta,MT,arable,Arable (cereals/oilseeds),Dessert grapes: all varieties - prices per 100 kg,06410000,1843.1
+2024,Malta,MT,orchards,Orchards/Vineyards (perennial),Plums: all varieties  - prices per 100 kg,06192000,3012.3
+2024,Malta,MT,rowCrops,Row crops,Main crop potatoes - prices per 100 kg,05120000,632.7
+2024,Malta,MT,vegetables,Vegetables (fresh market/transplant),Cultivated mushrooms: all qualities - prices per 100 kg,04199901,3997.2000000000003
+2024,Netherlands,NL,arable,Arable (cereals/oilseeds),Rape - prices per 100 kg,02110000,450.0
+2024,Netherlands,NL,orchards,Orchards/Vineyards (perennial),Strawberries: all types of production - prices per 100 kg,06193000,5328.0
+2024,Netherlands,NL,rowCrops,Row crops,Early potatoes - prices per 100 kg,05110000,774.5999999999999
+2024,Netherlands,NL,vegetables,Vegetables (fresh market/transplant),Asparagus: all qualities - prices per 100 kg,04199910,6518.9
+2024,Poland,PL,arable,Arable (cereals/oilseeds),Rape - prices per 100 kg,02110000,468.40000000000003
+2024,Poland,PL,industrial,Specialty industrial crops,Raw tobacco: all varieties - prices per 100 kg,02300000,4351.9
+2024,Poland,PL,orchards,Orchards/Vineyards (perennial),Raspberries - prices per 100 kg,06199200,2675.0
+2024,Poland,PL,rowCrops,Row crops,Main crop potatoes - prices per 100 kg,05120000,276.3
+2024,Poland,PL,vegetables,Vegetables (fresh market/transplant),Cultivated mushrooms: all qualities - prices per 100 kg,04199901,1543.8999999999999
+2024,Portugal,PT,arable,Arable (cereals/oilseeds),Dessert grapes: all varieties - prices per 100 kg,06410000,2583.2999999999997
+2024,Portugal,PT,industrial,Specialty industrial crops,Hops: all varieties - prices per 100 kg,02920000,4500.0
+2024,Portugal,PT,orchards,Orchards/Vineyards (perennial),Raspberries - prices per 100 kg,06199200,7565.299999999999
+2024,Portugal,PT,rowCrops,Row crops,Beetroot - prices per 100 kg,04199905,1248.5
+2024,Portugal,PT,vegetables,Vegetables (fresh market/transplant),Green peas: all qualities - prices per 100 kg,04199000,3815.4
+2024,Romania,RO,arable,Arable (cereals/oilseeds),Dessert grapes: all varieties - prices per 100 kg,06410000,1184.0
+2024,Romania,RO,orchards,Orchards/Vineyards (perennial),Strawberries: all types of production - prices per 100 kg,06193000,1986.1000000000001
+2024,Romania,RO,rowCrops,Row crops,Beetroot - prices per 100 kg,04199905,790.0
+2024,Romania,RO,vegetables,Vegetables (fresh market/transplant),Garlic - prices per 100 kg,04199906,4022.4
+2024,Sweden,SE,arable,Arable (cereals/oilseeds),Rape - prices per 100 kg,02110000,429.4
+2024,Sweden,SE,orchards,Orchards/Vineyards (perennial),Strawberries in the open - prices per 100 kg,06193100,4288.8
+2024,Sweden,SE,rowCrops,Row crops,Early potatoes - prices per 100 kg,05110000,539.4
+2024,Sweden,SE,vegetables,Vegetables (fresh market/transplant),Tomatoes under glass: all qualities - prices per 100 kg,04122000,1334.5
+2024,Slovenia,SI,arable,Arable (cereals/oilseeds),Grapes for wine production - prices per 100 kg,06490000,879.7
+2024,Slovenia,SI,industrial,Specialty industrial crops,Hops: all varieties - prices per 100 kg,02920000,7147.0
+2024,Slovenia,SI,orchards,Orchards/Vineyards (perennial),Strawberries: all types of production - prices per 100 kg,06193000,5596.599999999999
+2024,Slovenia,SI,rowCrops,Row crops,Early potatoes - prices per 100 kg,05110000,590.7
+2024,Slovenia,SI,vegetables,Vegetables (fresh market/transplant),Garlic - prices per 100 kg,04199906,7675.299999999999
+2024,Slovakia,SK,arable,Arable (cereals/oilseeds),Dessert grapes: all varieties - prices per 100 kg,06410000,1004.7
+2024,Slovakia,SK,orchards,Orchards/Vineyards (perennial),Strawberries in the open - prices per 100 kg,06193100,3244.0
+2024,Slovakia,SK,rowCrops,Row crops,Early potatoes - prices per 100 kg,05110000,720.1999999999999
+2024,Slovakia,SK,vegetables,Vegetables (fresh market/transplant),Tomatoes under glass: all qualities - prices per 100 kg,04122000,2180.8

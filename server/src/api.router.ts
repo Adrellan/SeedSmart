@@ -1,8 +1,8 @@
 import { Router } from 'express';
-import { HomeController } from './controllers/UserController';
+import { DashboardController } from './controllers/DashboardController';
 
 const router = Router();
 
-router.use('/home', HomeController);
+router.use('/dashboard', DashboardController);
 
 export default router;

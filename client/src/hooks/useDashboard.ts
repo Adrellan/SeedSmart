@@ -1,9 +1,10 @@
 ﻿import { useEffect, useMemo, useState } from 'react';
-import { fetchCountries, fetchRegions, fetchTopics } from '../services/DashboardService';
+import { fetchCountries, fetchRegions, fetchTopics, fetchSowingMap } from '../services/DashboardService';
 import type { Country } from '../types/Country';
 import type { RegionShape, RegionGeometry } from '../types/Region';
 import { TARGET_ZOOM, type CategoryKey } from '../config/globals';
 import type { FetchTopicsResponse } from '../types/Topic';
+import type { SowingMapResponse } from '../types/SowingMap';
 
 interface Year {
   label: string;
@@ -58,6 +59,47 @@ const computeCenter = (geometry: RegionGeometry | null): [number, number] | null
   return [centerLat, centerLng];
 };
 
+const computeBoundingBox = (geometry: RegionGeometry | null): [number, number, number, number] | null => {
+  if (!geometry) {
+    return null;
+  }
+
+  let hasPoint = false;
+  let minLat = Infinity;
+  let maxLat = -Infinity;
+  let minLng = Infinity;
+  let maxLng = -Infinity;
+
+  const track = (lng: number, lat: number) => {
+    if (!Number.isFinite(lat) || !Number.isFinite(lng)) {
+      return;
+    }
+    hasPoint = true;
+    if (lat < minLat) minLat = lat;
+    if (lat > maxLat) maxLat = lat;
+    if (lng < minLng) minLng = lng;
+    if (lng > maxLng) maxLng = lng;
+  };
+
+  if (geometry.type === 'Polygon') {
+    geometry.coordinates.forEach((ring) => {
+      ring.forEach(([lng, lat]) => track(lng, lat));
+    });
+  } else {
+    geometry.coordinates.forEach((polygon) => {
+      polygon.forEach((ring) => {
+        ring.forEach(([lng, lat]) => track(lng, lat));
+      });
+    });
+  }
+
+  if (!hasPoint) {
+    return null;
+  }
+
+  return [minLng, minLat, maxLng, maxLat];
+};
+
 export const useDashboard = () => {
   const currentYear = new Date().getFullYear() - 1;
   const years: Year[] = Array.from({ length: 26 }, (_, i) => ({
@@ -74,6 +116,7 @@ export const useDashboard = () => {
   const [selectedYear, setSelectedYear] = useState<number>(currentYear);
   const [notes, setNotes] = useState<string>('');
   const [mapView, setMapView] = useState<MapViewState | null>(null);
+  const [sowingMap, setSowingMap] = useState<SowingMapResponse | null>(null);
   const [selectedCategories, setSelectedCategories] = useState<CategoryKey[]>([]);
   const [topics, setTopics] = useState<FetchTopicsResponse | null>(null);
 
@@ -166,9 +209,14 @@ export const useDashboard = () => {
   }, [selectedCountry, countries]);
 
   useEffect(() => {
+    let isMounted = true;
+
     if (!selectedRegion) {
       setMapView(null);
-      return;
+      setSowingMap(null);
+      return () => {
+        isMounted = false;
+      };
     }
 
     const region = regionsData.find((item) => item.name_latn === selectedRegion);
@@ -176,10 +224,40 @@ export const useDashboard = () => {
 
     if (!center) {
       setMapView(null);
-      return;
+    } else {
+      setMapView({ center, zoom: TARGET_ZOOM });
     }
 
-    setMapView({ center, zoom: TARGET_ZOOM });
+    const bounds = computeBoundingBox(region?.geom ?? null);
+    if (!bounds) {
+      setSowingMap(null);
+      return () => {
+        isMounted = false;
+      };
+    }
+
+    const coordinatesParam = bounds.join(',');
+    setSowingMap(null);
+
+    const loadSowingMap = async () => {
+      try {
+        const data = await fetchSowingMap(coordinatesParam);
+        if (isMounted) {
+          setSowingMap(data);
+        }
+      } catch (error) {
+        console.error('Failed to load sowing map', error);
+        if (isMounted) {
+          setSowingMap(null);
+        }
+      }
+    };
+
+    loadSowingMap();
+
+    return () => {
+      isMounted = false;
+    };
   }, [selectedRegion, regionsData]);
 
   useEffect(() => {
@@ -233,6 +311,7 @@ export const useDashboard = () => {
       notes,
       regionsData,
       mapView,
+      sowingMap,
       topics,
     });
   };
@@ -241,6 +320,7 @@ export const useDashboard = () => {
     countries,
     regionsData,
     mapView,
+    sowingMap,
     topics,
     selectedCountry,
     setSelectedCountry,

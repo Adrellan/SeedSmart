@@ -1,4 +1,4 @@
-﻿import React from 'react';
+import React from 'react';
 import { AutoComplete } from 'primereact/autocomplete';
 import { Dropdown } from 'primereact/dropdown';
 import { Button } from 'primereact/button';

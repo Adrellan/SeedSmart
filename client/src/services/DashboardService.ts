@@ -3,6 +3,7 @@ import { API_URL } from '../constant';
 import type { Country } from '../types/Country';
 import type { RegionShape } from '../types/Region';
 import type { FetchTopicsParams, FetchTopicsResponse } from '../types/Topic';
+import type { SowingMapResponse } from '../types/SowingMap';
 
 const normalizeCountryName = (value: string): string => {
   const trimmed = value.trim();
@@ -40,6 +41,21 @@ export const fetchRegions = async (cntrCode: string): Promise<RegionShape[]> => 
     name_latn: region.name_latn,
     geom: region.geom,
   }));
+};
+
+export const fetchSowingMap = async (coordinates: string): Promise<SowingMapResponse> => {
+  const trimmed = coordinates.trim();
+  if (!trimmed) {
+    throw new Error('coordinates are required for fetchSowingMap');
+  }
+
+  const { data } = await axios.get<SowingMapResponse>(`${API_URL}/api/dashboard/sowingmap`, {
+    params: { coordinates: trimmed },
+  });
+  if (typeof data !== 'object' || data === null || typeof data.count !== 'number' || !Array.isArray(data.features)) {
+    throw new Error('Unexpected sowing map response payload');
+  }
+  return data;
 };
 
 export const fetchTopics = async (

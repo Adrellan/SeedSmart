@@ -1,4 +1,4 @@
-﻿.dashboard-container {
+.dashboard-container {
   width: 20vw;
   height: 100vh;
   display: flex;
@@ -166,4 +166,3 @@
   left: 0;
   top: 0;
 }
-

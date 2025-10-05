@@ -8,8 +8,7 @@ import json
 from pathlib import Path
 from typing import Any, Dict, List, Optional, Tuple
 
-CSV_FILENAME = "all_products_prices_6cats_2000_2024.csv"
-
+CSV_FILENAME = "alap_kiegeszitve_costs_full_modded.csv"
 
 def locate_csv() -> Path:
     script_path = Path(__file__).resolve()

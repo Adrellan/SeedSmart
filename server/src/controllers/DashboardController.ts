@@ -2,7 +2,7 @@ import { Router, Request, Response } from 'express';
 import path from 'path';
 import fs from 'fs';
 import { promisify } from 'util';
-import { execFile } from 'child_process';
+import { execFile, spawn } from 'child_process';
 import { logger } from '../config/logger.config';
 import { Countires } from '../models/Countires'; // (ha elgépelés, írd át Countries-re + importot is)
 import { Regions } from '../models/Regions';
@@ -25,6 +25,13 @@ const SOWINGMAP_SCRIPT_CANDIDATES = [
   path.resolve(__dirname, '../../python_scripts/extract_sowingmap_features.py'),
 ];
 
+const PREDICT_SCRIPT_CANDIDATES = [
+  path.resolve(process.cwd(), 'server/src/python_scripts/train_profit_model.py'),
+  path.resolve(process.cwd(), 'src/python_scripts/train_profit_model.py'),
+  path.resolve(__dirname, '../python_scripts/train_profit_model.py'),
+  path.resolve(__dirname, '../../python_scripts/train_profit_model.py'),
+];
+
 const PYTHON_MAX_BUFFER = 1024 * 1024 * 64;
 
 const resolveFindTopCropScript = (): string => {
@@ -43,6 +50,18 @@ const resolveSowingMapScript = (): string => {
   const searched = SOWINGMAP_SCRIPT_CANDIDATES.join(', ');
   logger.error('extract_sowingmap_features.py script not found. Checked paths: %s', searched);
   throw new Error(`extract_sowingmap_features.py script not found. Checked paths: ${searched}`);
+};
+
+
+const resolvePredictScript = (): string => {
+  for (const candidate of PREDICT_SCRIPT_CANDIDATES) {
+    if (fs.existsSync(candidate)) {
+      return candidate;
+    }
+  }
+  const searched = PREDICT_SCRIPT_CANDIDATES.join(', ');
+  logger.error('train_profit_model.py script not found. Checked paths: %s', searched);
+  throw new Error(`train_profit_model.py script not found. Checked paths: ${searched}`);
 };
 
 const collectCategoryLabels = (input: unknown): string[] => {
@@ -108,6 +127,79 @@ router.get('/regions', async (req: Request, res: Response) => {
   } catch (err) {
     logger.error('Error fetching regions: %o', err);
     return res.status(500).json({ error: 'Internal Server Error' });
+  }
+});
+
+
+router.get('/predicate', async (req: Request, res: Response) => {
+  logger.info('GET predicate endpoint called');
+
+  const { country, target_year, categories } = req.query;
+  if (typeof country !== 'string' || !country.trim()) {
+    return res.status(400).json({ error: 'country query parameter is required' });
+  }
+  const year = typeof target_year === 'string' ? Number.parseInt(target_year, 10) : Number.NaN;
+  if (!Number.isInteger(year)) {
+    return res.status(400).json({ error: 'target_year query parameter must be a number' });
+  }
+
+  const categoriesArray: string[] = [];
+  if (Array.isArray(categories)) {
+    categories.forEach((entry) => {
+      if (typeof entry === 'string' && entry.trim()) {
+        categoriesArray.push(...entry.split(',').map((value) => value.trim()).filter(Boolean));
+      }
+    });
+  } else if (typeof categories === 'string' && categories.trim()) {
+    categoriesArray.push(...categories.split(',').map((value) => value.trim()).filter(Boolean));
+  }
+
+  let scriptPath: string;
+  try {
+    scriptPath = resolvePredictScript();
+  } catch (error) {
+    return res.status(500).json({ error: 'train_profit_model.py script not found on server' });
+  }
+
+  const args = [
+    '--suggest',
+    '--country', country.trim(),
+    '--year', year.toString(),
+    '--top', '3',
+  ];
+  if (categoriesArray.length > 0) {
+    args.push('--categories', ...categoriesArray);
+  }
+
+  try {
+    const child = spawn('python', [scriptPath, ...args]);
+    let stdout = '';
+    let stderr = '';
+
+    child.stdout.on('data', (chunk) => {
+      stdout += chunk.toString();
+    });
+
+    child.stderr.on('data', (chunk) => {
+      stderr += chunk.toString();
+    });
+
+    child.on('close', (code) => {
+      if (code !== 0) {
+        logger.error('Predicate script failed', { code, stderr });
+        return res.status(500).json({ error: 'Failed to compute prediction results' });
+      }
+      try {
+        const payload = JSON.parse(stdout.trim() || '[]');
+        return res.status(200).json({ results: payload });
+      } catch (error) {
+        logger.error('Failed to parse predicate output', { stdout });
+        return res.status(500).json({ error: 'Invalid prediction payload from script' });
+      }
+    });
+  } catch (error) {
+    logger.error('Error spawning predicate script', error);
+    return res.status(500).json({ error: 'Failed to run prediction script' });
   }
 });
 

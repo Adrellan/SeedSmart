@@ -4,6 +4,8 @@ import type { Country } from '../types/Country';
 import type { RegionShape } from '../types/Region';
 import type { FetchTopicsParams, FetchTopicsResponse } from '../types/Topic';
 import type { SowingMapResponse } from '../types/SowingMap';
+import type { PredicateResponse } from '../types/Predicate';
+import type { FetchPredicateParams } from '../interfaces/PredicateParams';
 
 const normalizeCountryName = (value: string): string => {
   const trimmed = value.trim();
@@ -54,6 +56,27 @@ export const fetchSowingMap = async (coordinates: string): Promise<SowingMapResp
   });
   if (typeof data !== 'object' || data === null || typeof data.count !== 'number' || !Array.isArray(data.features)) {
     throw new Error('Unexpected sowing map response payload');
+  }
+  return data;
+};
+
+export const fetchPredicate = async (params: FetchPredicateParams): Promise<PredicateResponse> => {
+  const { country, categories = [], targetYear } = params;
+  if (!country || !Number.isFinite(targetYear)) {
+    throw new Error('country and targetYear are required for fetchPredicate');
+  }
+
+  const query: Record<string, string> = {
+    country: normalizeCountryName(country),
+    target_year: targetYear.toString(),
+  };
+  if (categories.length > 0) {
+    query.categories = categories.join(',');
+  }
+
+  const { data } = await axios.get<PredicateResponse>(`${API_URL}/api/dashboard/predicate`, { params: query });
+  if (!data || !Array.isArray(data.results)) {
+    throw new Error('Unexpected predicate response payload');
   }
   return data;
 };

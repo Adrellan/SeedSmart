@@ -39,6 +39,7 @@ interface DashboardProps {
 const Dashboard: React.FC<DashboardProps> = ({ state }) => {
   const {
     topics,
+    suggestions,
     selectedCountry,
     setSelectedCountry,
     filteredCountries,
@@ -54,9 +55,12 @@ const Dashboard: React.FC<DashboardProps> = ({ state }) => {
     handleSuggest,
   } = state;
 
+  const canSuggest = Boolean(selectedCountry);
   const onSuggest = () => {
+    if (!canSuggest) return;
     handleSuggest();
   };
+
 
   return (
     <div className="dashboard-container">
@@ -141,34 +145,48 @@ const Dashboard: React.FC<DashboardProps> = ({ state }) => {
 
           </div>
         </div>
-            {topics && (
-              <ul className="topics-list">
-                {topics.results?.length ? (
-                  topics.results.map((result) => (
-                    <li key={result.requested_category ?? 'all'}>
-                      {formatTopicEntry(result)}
-                    </li>
-                  ))
-                ) : topics.record ? (
-                  <li>
-                    {formatTopicEntry({
-                      requested_category: null,
-                      found: true,
-                      record: topics.record as unknown as TopicResult['record'],
-                    })}
-                  </li>
-                ) : (
-                  <li>No data available</li>
-                )}
-              </ul>
+        {topics && (
+          <ul className="topics-list">
+            {topics.results?.length ? (
+              topics.results.map((result) => (
+                <li key={result.requested_category ?? 'all'}>
+                  {formatTopicEntry(result)}
+                </li>
+              ))
+            ) : topics.record ? (
+              <li>
+                {formatTopicEntry({
+                  requested_category: null,
+                  found: true,
+                  record: topics.record as unknown as TopicResult['record'],
+                })}
+              </li>
+            ) : (
+              <li>No data available</li>
             )}
+          </ul>
+        )}
+
       </div>
+
+      {suggestions.length > 0 && (
+        <div className="dashboard-suggestions">
+          <h3 className="dashboard-suggestions-title">Predicted suggestions</h3>
+          <ul className="dashboard-suggestions-list">
+            {suggestions.map((item, index) => (
+              <li key={`suggestion-${index}`}>{item.product}</li>
+            ))}
+          </ul>
+        </div>
+      )}
 
       <div className="dashboard-footer">
         <Button
           label="Get suggestion"
           className="w-full dashboard-button"
           onClick={onSuggest}
+          disabled={!canSuggest}
+          tooltip={!canSuggest ? "Válassz országot először" : undefined}
         />
       </div>
     </div>

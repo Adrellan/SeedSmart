@@ -1,10 +1,11 @@
 ﻿import { useEffect, useMemo, useState } from 'react';
-import { fetchCountries, fetchRegions, fetchTopics, fetchSowingMap } from '../services/DashboardService';
+import { fetchCountries, fetchRegions, fetchTopics, fetchSowingMap, fetchPredicate } from '../services/DashboardService';
 import type { Country } from '../types/Country';
 import type { RegionShape, RegionGeometry } from '../types/Region';
 import { TARGET_ZOOM, type CategoryKey } from '../config/globals';
 import type { FetchTopicsResponse } from '../types/Topic';
 import type { SowingMapResponse } from '../types/SowingMap';
+import type { PredicateSuggestion } from '../types/Predicate';
 
 interface Year {
   label: string;
@@ -119,6 +120,8 @@ export const useDashboard = () => {
   const [sowingMap, setSowingMap] = useState<SowingMapResponse | null>(null);
   const [selectedCategories, setSelectedCategories] = useState<CategoryKey[]>([]);
   const [topics, setTopics] = useState<FetchTopicsResponse | null>(null);
+  const [suggestions, setSuggestions] = useState<PredicateSuggestion[]>([]);
+  const [isSuggesting, setIsSuggesting] = useState(false);
 
   const toggleCategory = (key: CategoryKey) =>
     setSelectedCategories((prev) =>
@@ -302,18 +305,25 @@ export const useDashboard = () => {
     );
   };
 
-  const handleSuggest = () => {
-    console.log({
-      country: selectedCountry,
-      region: selectedRegion,
-      year: selectedYear,
-      categories: selectedCategories,
-      notes,
-      regionsData,
-      mapView,
-      sowingMap,
-      topics,
-    });
+  const handleSuggest = async () => {
+    if (!selectedCountry) {
+      console.warn('No country selected for predictions');
+      return;
+    }
+    setIsSuggesting(true);
+    try {
+      const response = await fetchPredicate({
+        country: selectedCountry,
+        categories: selectedCategories,
+        targetYear: selectedYear + 1,
+      });
+      setSuggestions(response.results);
+    } catch (error) {
+      console.error('Failed to load predicate suggestions', error);
+      setSuggestions([]);
+    } finally {
+      setIsSuggesting(false);
+    }
   };
 
   return {
@@ -337,6 +347,8 @@ export const useDashboard = () => {
     selectedCategories,
     toggleCategory,
     handleSuggest,
+    suggestions,
+    isSuggesting,
   };
 };
 

@@ -166,3 +166,22 @@
   left: 0;
   top: 0;
 }
+
+.dashboard-suggestions {
+  margin-top: 16px;
+  padding: 16px;
+  border: 1px solid rgba(0,0,0,0.08);
+  border-radius: 12px;
+  background: #fff; /* ha kártyás a többi is */
+}
+
+.dashboard-suggestions-title {
+  margin: 0 0 8px 0;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.dashboard-suggestions-list {
+  margin: 0;
+  padding-left: 18px; /* szokásos UL behúzás */
+}

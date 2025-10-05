@@ -12,6 +12,7 @@ import Dashboard from '../components/Dashboard';
 import { useDashboard, type MapViewState } from '../hooks/useDashboard';
 import { CROP_GROUP_COLORS, DEFAULT_CROP_COLOR, type CategoryKey } from '../config/globals';
 import type { FeatureCollection, Geometry, Feature } from 'geojson';
+import Legend from '../components/Legend';
 
 // Fix Leaflet default marker icon issue
 L.Icon.Default.mergeOptions({
@@ -115,6 +116,7 @@ const HomePage: React.FC = () => {
             <GeoJSON key={sowingLayerKey} data={sowingGeoJson} style={cropStyle} />
           )}
         </MapContainer>
+        <Legend position="top-right" shape="square" title="Technology categories" />
       </div>
     </div>
   );

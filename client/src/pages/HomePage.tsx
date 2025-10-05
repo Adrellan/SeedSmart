@@ -1,8 +1,8 @@
 ﻿import React from 'react';
 import { GeoJSON, MapContainer, TileLayer, useMap } from 'react-leaflet';
 import L from 'leaflet';
-
-// FONTOS: A CSS importok sorrendje számít!
+import type { GeoJsonProperties } from 'geojson';
+type CropProps = GeoJsonProperties & { crop_group?: string | null };
 import 'leaflet/dist/leaflet.css';
 import 'primereact/resources/themes/lara-light-blue/theme.css';
 import 'primereact/resources/primereact.min.css';
@@ -75,17 +75,21 @@ const HomePage: React.FC = () => {
     };
   }, [sowingMap, selectedCategories]);
 
-  const cropStyle = React.useCallback((feature: Feature<Geometry, { crop_group?: string | null }>) => {
-    const group = feature?.properties?.crop_group ?? null;
-    const color = (group && CROP_GROUP_COLORS[group as CategoryKey]) ?? DEFAULT_CROP_COLOR;
+  const cropStyle = React.useCallback<L.StyleFunction<CropProps>>(
+    (feature) => {
+      const group = (feature?.properties as CropProps | undefined)?.crop_group ?? null;
+      const color =
+        (group && CROP_GROUP_COLORS[group as CategoryKey]) ?? DEFAULT_CROP_COLOR;
 
-    return {
-      color,
-      weight: 1,
-      fillColor: color,
-      fillOpacity: 0.35,
-    };
-  }, []);
+      return {
+        color,
+        weight: 1,
+        fillColor: color,
+        fillOpacity: 0.35,
+      };
+    },
+    []
+  );
 
   const sowingLayerKey = React.useMemo(() => {
     if (!sowingMap) {

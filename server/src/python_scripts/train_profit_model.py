@@ -38,8 +38,7 @@ NUMERIC_FEATURES = [
     "Phosphorous(mg/Kg)",
 ]
 FEATURE_COLUMNS = CATEGORICAL_FEATURES + NUMERIC_FEATURES
-TARGET_COLUMN = "profit_margin_pct"
-
+TARGET_COLUMN = "profit_eur_tonne"
 
 def load_dataset(path: Path = DATA_PATH) -> pd.DataFrame:
     if not path.exists():

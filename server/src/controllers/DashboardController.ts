@@ -259,7 +259,7 @@ router.get('/topic', async (req: Request, res: Response) => {
     logger.error('FindTopCrop script missing: %o', err);
     return res.status(500).json({ error: 'Server misconfiguration: helper script not found' });
   }
-
+ 
   const categoryLabels = collectCategoryLabels(rawCategoryInput);
 
   const args = ['--country', country.trim(), '--year', yearNumber.toString()];
